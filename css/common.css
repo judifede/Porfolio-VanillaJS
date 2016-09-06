@@ -1,0 +1,70 @@
+/*text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black,
+				 0px 2px 0px black, 0px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;*/
+/*text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px 0px 0px black, -1px 0px 0px black,
+				 0px 1px 0px black, 0px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;*/
+
+body{
+	text-align:center;
+	margin:auto;
+}
+#fondo{
+	background: url(../img/auditorio.jpg) no-repeat;
+	background-size: cover;
+	/*-webkit-filter: contrast(75%);*/
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#foto{
+	/*-webkit-filter: contrast(100%);*/
+	width: 252px;
+	height: 252px;
+	display: inline;
+	border: 2px solid darkgrey;
+	border-radius: 50%;
+	margin: 4% 0 1% 0;
+	padding: 0;
+}
+.texto{
+	color: white;
+	letter-spacing: 1px;
+	font-family: 'Exo 2', sans-serif;
+	
+	
+	
+}
+#nombre{
+	margin: 1% 0 1% 0;
+	text-shadow: 1.75px 1.75px 0px black, -1.75px -1.75px 0px black, 1.75px 0px 0px black, -1.75px 0px 0px black,
+				 0px 1.75px 0px black, 0px -1.75px 0px black, 1.75px -1.75px 0px black, -1.75px 1.75px 0px black;
+}
+#titulo{
+	margin: 1% 0 2% 0;
+	text-shadow: 1.5px 1.5px 0px black, -1.5px -1.5px 0px black, 1.5px 0px 0px black, -1.5px 0px 0px black,
+				 0px 1.5px 0px black, 0px -1.5px 0px black, 1.5px -1.5px 0px black, -1.5px 1.5px 0px black;
+}
+#iconos{
+	width: 100%;
+}
+#iconos div{
+	display: inline-block;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+#iconos p{
+	font-size: 14pt;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px 0px 0px black, -1px 0px 0px black,
+				 0px 1px 0px black, 0px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+}
+#iconos div:hover img{
+	transform: scale(1.1,1.1);
+}
+.iconos{
+	width: 115px;
+	height: 115px;
+	display: inline-block;
+	border-radius: 50%;
+}
