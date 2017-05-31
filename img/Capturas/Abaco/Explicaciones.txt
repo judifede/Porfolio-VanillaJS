@@ -1,0 +1,28 @@
+General
+Mis prácticas de empresa las hice en Abaco System, tienda de informática situada en El Carrizal, donde colaboraría con ellos para reformar la página web de la empresa.
+La primera versión de este proyecto era una maqueta con pequeñas funciones hecha por una diseñadora que nunca conocí y un programador que suele subcontratar la empresa, 
+a partir de ahí, entre ese programador y mi jefe, me iban mandando tareas. A través de Git, BitBucket, Trello, WhatsApp y alguna llamada telefónica, me organizaba con ese programador
+
+
+Inicio
+
+
+
+
+
+Productos
+
+
+
+Contacto
+
+
+
+
+
+Reparaciones
+
+
+
+
+FAQ(Preguntas Frecuentes)

@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 
 <html lang="es-ES">
-    <head>
-        <title>Porfolio</title>
-        <meta name="author" content="Juan Diego Fernández Déniz"/>
-        <meta charset="UTF-8"/>
+	<head>
+		<title>Porfolio</title>
+		<meta name="author" content="Judifede"/>
+		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
-        <link rel="stylesheet" href="css/common.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand" rel="stylesheet">
-    </head>
-    <body>
-        <img src="img/Foto-Final.jpg" alt="Foto" id="foto">
-        <h1 class="texto" id="nombre">JUAN DIEGO FERNÁNDEZ DÉNIZ</h1>
-        <h2 class="texto" id="titulo">Desarrollador Web</h2>
-        <div id="cajaIconos">
-            <div id="aboutMe" class="iconos" onclick="armarSobreMi()">
-                <img src="img/icons/aboutMe.png" alt="AboutMe" class="imgIconos">
-                <p class="texto">SOBRE MÍ</p>
-            </div>
-            <div id="proyectos" class="iconos">
-                <img src="img/icons/proyecto.png" alt="Proyectos" class="imgIconos">
-                <p class="texto">PROYECTOS</p>
-            </div>
-            <div id="contacto" class="iconos">
-                <img src="img/icons/contacto.png" alt="Contacto" class="imgIconos">
-                <p class="texto">CONTACTO</p>
-            </div>
-        </div>
-        <div id="panel1"><p onclick="desarmarSobreMi()">A</p></div>
-        <div id="panel2"><p>B</p></div>
-        <div id="panel3"><p>0</p></div>
-        <script type="text/javascript" src="js/cambioIconos.js"></script>
-    </body>
+        <link rel="stylesheet" type="text/css" href="css/flex.css"/>
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar-fixed-top">
+			<ul>
+				<li>
+				<a onclick="scrollToContent('pageSobreMi')">Sobre Mi</a>
+				</li>
+				<li><a onclick="scrollToContent('pageProyectos')">Proyectos</a></li>
+			</ul>
+		</nav>
+		
+		<section id="main">
+			<article>
+				<img src="img/Foto-Final.jpg" alt="portraitPhoto" id="portraitPhoto">
+		        <h1 class="texto textHeader" id="nombre">JUAN DIEGO FERNÁNDEZ DÉNIZ</h1>
+		        <h2 class="texto textHeader" id="titulo">Desarrollador Web</h2>
+		        <div id="cajaIconos">
+		            <div id="aboutMe" class="iconos">
+		                <img src="img/icons/aboutMe.png" alt="AboutMe" class="imgIconos" 
+		                onclick="scrollToContent('pageSobreMi')">
+		                <p class="texto">SOBRE MÍ</p>
+		            </div>
+		            <div id="proyectos" class="iconos">
+		                <img src="img/icons/proyecto.png" alt="Proyectos" class="imgIconos"
+		                onclick="scrollToContent('pageProyectos')">
+		                <p class="texto">PROYECTOS</p>
+		            </div>
+		            <div id="contacto" class="iconos">
+		                <img src="img/icons/contacto.png" alt="Contacto" class="imgIconos"
+		                onclick="scrollToContent('footerContacto')">
+		                <p class="texto">CONTACTO</p>
+		            </div>
+		        </div>
+			</article>
+		</section>
+
+		<section style="background-color: yellow" id="pageSobreMi">
+			<article style="text-align: center;">
+				<h1>SOBRE MI</h1>
+			</article>
+			<article>
+				<p>4</p>
+			</article>
+		</section>
+
+		<section style="background-color: darkgrey" id="pageProyectos">
+			<article style="text-align: center;">
+				<h1>PROYECTOS</h1>
+			</article>
+			<article>
+				<p>4</p>
+			</article>
+		</section>
+
+		<footer id="footerContacto">
+            <p>5</p>
+        </footer>
+        <script type="text/javascript" src="js/common.js"></script>
+	</body>
 </html>
