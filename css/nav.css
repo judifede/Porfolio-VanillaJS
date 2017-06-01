@@ -12,6 +12,7 @@ ul li{
 	text-align: center;
 	background: #000;
 	border-right: 4px solid darkgrey;
+	cursor: pointer;
 }
 ul li:last-child{
 	border: none;
