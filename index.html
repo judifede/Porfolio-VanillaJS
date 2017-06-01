@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="css/flex.css"/>
         <link rel="stylesheet" type="text/css" href="css/nav.css">
-        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand">
@@ -17,18 +18,32 @@
 	<body>
 		<nav class="navbar-fixed-top">
 			<ul>
-				<li>
-				<a onclick="scrollToContent('pageSobreMi')">Sobre Mi</a>
+				<li onclick="scrollToContent('pageSobreMi')">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="material-icons">info_outline</i></span>
+						<p>Sobre Mi</p>
+					</div>
 				</li>
-				<li><a onclick="scrollToContent('pageProyectos')">Proyectos</a></li>
+				<li onclick="scrollToContent('pageProyectos')">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="material-icons">card_travel</i></span>
+						<p>Proyectos</p>
+					</div>
+				</li>
+				<li onclick="scrollToContent('footerContacto')">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="material-icons">phone</i></span>
+						<p>Contacto</p>
+					</div>
+				</li>
 			</ul>
 		</nav>
 		
 		<section id="main">
 			<article>
-				<img src="img/Foto-Final.jpg" alt="portraitPhoto" id="portraitPhoto">
+				<img src="img/Foto-Final.jpg" alt="portraitPhoto" id="portraitPhoto" onclick="styleNavMobile()">
 		        <h1 class="texto textHeader" id="nombre">JUAN DIEGO FERNÁNDEZ DÉNIZ</h1>
-		        <h2 class="texto textHeader" id="titulo">Desarrollador Web</h2>
+		        <h2 class="texto textHeader" id="titulo">Desarrollador de Software</h2>
 		        <div id="cajaIconos">
 		            <div id="aboutMe" class="iconos">
 		                <img src="img/icons/aboutMe.png" alt="AboutMe" class="imgIconos" 
@@ -71,5 +86,8 @@
             <p>5</p>
         </footer>
         <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/common.js">
+        	
+        </script>
 	</body>
 </html>

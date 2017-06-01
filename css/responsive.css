@@ -1,0 +1,70 @@
+@media screen and (max-width: 1500px) { /* Escritorio */
+	.navbar-fixed-top{
+		display: none;
+	}
+	.imgIconos{
+		width: 115px;
+		height: 115px;
+	}
+	#cajaIconos{
+		display: block;
+	}
+	#cajaIconos p{
+		font-size: 14pt;
+	}
+	h1.textHeader{
+		font-size: 28pt;
+	}
+	h2.textHeader{
+		font-size: 22pt;
+	}
+}
+@media screen and (max-width: 1000px) { /* Tablets */
+	.navbar-fixed-top{
+		display: block;
+	}
+	.input-group p{
+		display: block;
+	}
+	.imgIconos{
+		width: 85px;
+		height: 85px;
+	}
+	#cajaIconos{
+		display: none;
+	}
+	#cajaIconos p{
+		font-size: 11pt;
+	}
+	h1.textHeader{
+		font-size: 25pt;
+	}
+	h2.textHeader{
+		font-size: 19pt;
+	}
+}
+
+@media screen and (max-width: 700px) { /* Móviles */
+	.navbar-fixed-top{
+		display: block;
+	}
+	.input-group p{
+		display: none;
+	}
+	.imgIconos{
+		width: 55px;
+		height: 55px;
+	}
+	#cajaIconos{
+		display: none;
+	}
+	#cajaIconos p{
+		font-size: 8pt;
+	}
+	h1.textHeader{
+		font-size: 22pt;
+	}
+	h2.textHeader{
+		font-size: 16pt;
+	}
+}
