@@ -55,5 +55,6 @@ function styleNavResponsive(){
 	}
 }
 
+styleNavResponsive();
 var mql = window.matchMedia("screen and (max-width: 700px)");
 mql.addListener(styleNavResponsive);
