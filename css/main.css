@@ -54,7 +54,8 @@ body{
 	cursor: pointer;
 }
 #aboutMe img{
-	padding: 0 !important
+	padding: 0 !important;
+	cursor: pointer;
 }
 
 
