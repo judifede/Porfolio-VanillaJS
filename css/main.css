@@ -49,7 +49,12 @@ body{
 .imgIconos{
 	display: inline-block;
 	border-radius: 50%;
+	padding: 10px 10px;
+	background-color: black;
 	cursor: pointer;
+}
+#aboutMe img{
+	padding: 0 !important
 }
 
 

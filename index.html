@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/nav.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand">
@@ -20,7 +21,7 @@
 			<ul>
 				<li onclick="scrollToContent('pageSobreMi')">
 					<div class="input-group">
-						<span class="input-group-addon"><i class="material-icons">info_outline</i></span>
+						<span class="input-group-addon"><i class="material-icons">info</i></span>
 						<p>Sobre Mi</p>
 					</div>
 				</li>
@@ -56,34 +57,50 @@
 		                <p class="texto">PROYECTOS</p>
 		            </div>
 		            <div id="contacto" class="iconos">
-		                <img src="img/icons/contacto.png" alt="Contacto" class="imgIconos"
+		                <img src="img/icons/phone.png" alt="Contacto" class="imgIconos"
 		                onclick="scrollToContent('footerContacto')">
 		                <p class="texto">CONTACTO</p>
 		            </div>
 		        </div>
 			</article>
 		</section>
-
 		<section style="background-color: yellow" id="pageSobreMi">
 			<article style="text-align: center;">
 				<h1>SOBRE MI</h1>
-			</article>
-			<article>
-				<p>4</p>
+				bootstrap
 			</article>
 		</section>
 
 		<section style="background-color: darkgrey" id="pageProyectos">
 			<article style="text-align: center;">
 				<h1>PROYECTOS</h1>
-			</article>
-			<article>
-				<p>4</p>
+				bootstrap
 			</article>
 		</section>
 
 		<footer id="footerContacto">
-            <p>5</p>
+            <div id="leftFooter">
+            	<div id="tlf">
+	                <img src="img/icons/whatsapp.svg" alt="WhatsApp" class="imgFooter" />
+	                <img src="img/icons/telegram.svg" alt="Telegram" class="imgFooter" />
+	                <p>638 666 414</p>
+            	</div>
+            	<div id="email">
+	                <img src="img/icons/gmail.svg" alt="Gmail" class="imgFooter" />
+	                <p id="emailToCopy">judifede217@gmail.com</p>
+	                <i class="material-icons content_copy" onclick="toastCopied()" >content_copy</i>
+	                <span id="toastCopied">CORREO COPIADO</span>
+            	</div>
+            </div>
+            <div id="rightFooter">
+            	<p>Redes Sociales</p>
+	            <a href="">
+	                <img src="img/icons/facebook.svg" alt="Facebook" class="imgFooter" />
+	            </a>
+	            <a href="">
+	                <img src="img/icons/twitter.svg" alt="Twitter" class="imgFooter" />
+	            </a>
+            </div>
         </footer>
         <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript" src="js/common.js">

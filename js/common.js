@@ -29,6 +29,7 @@ function scrollToContent(content){
 	}
 }
 
+/* NavBar */
 function styleNavResponsive(){
 
 	if(window.innerWidth<=700){ //Mobile
@@ -58,3 +59,21 @@ function styleNavResponsive(){
 styleNavResponsive();
 var mql = window.matchMedia("screen and (max-width: 700px)");
 mql.addListener(styleNavResponsive);
+
+/* Footer */
+function copiarAlPortapapeles(id_elemento) {
+	var aux = document.createElement("input");
+	aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+}
+
+function toastCopied() {
+	var message = document.getElementById('toastCopied');
+	copiarAlPortapapeles('emailToCopy');
+	message.style.visibility = "visible";
+    setTimeout(function(){	message.style.visibility = "hidden";  }, 4000);
+}
+

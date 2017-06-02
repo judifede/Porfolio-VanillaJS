@@ -1,0 +1,42 @@
+#footerContacto{
+	overflow: hidden;
+	background-color: #84dee0;
+	padding: 20px 0 20px 0;
+}
+#leftFooter{
+	text-align:left;
+	margin:auto;
+	vertical-align: middle;
+	display: inline-block;
+	width: 40%;
+}
+#rightFooter{
+	text-align: right;
+	margin:auto;
+	vertical-align: middle;
+	display: inline-block;
+	width: 40%;
+}
+#footerContacto div p{
+	font-size: 18pt;
+	display: inline;
+}
+.imgFooter{
+	width: 70px;
+}
+.imgFooter[alt="Telegram"]{
+	width: 58px
+}
+.imgFooter:hover{
+	transform: scale(1.1,1.1);
+}
+.imgFooter:first-child{
+	/*display: inline;*/
+}
+.material-icons.c-green { color: #00FF00 !important; }/* Color Verde Pastel */
+#toastCopied{
+	visibility: hidden;
+}
+.material-icons.content_copy { cursor: pointer; }/* Color Verde Pastel */
+
+
