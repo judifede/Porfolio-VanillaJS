@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+});
+/* Main */
 function findPosition(obj) {
     var navPosition = 37;
 	if(window.innerWidth>=1000){
@@ -21,7 +25,7 @@ function scrollToContent(content){
 		case "pageProyectos":
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;
-		case "footerContacto":
+		case "footer":
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;
 		default:
@@ -34,23 +38,23 @@ function styleNavResponsive(){
 
 	if(window.innerWidth<=700){ //Mobile
 		
-		for (var i =0; i < document.querySelectorAll(".material-icons").length; i++) {
-        	document.querySelectorAll(".material-icons")[i].classList.add("c-white");
+		for (var i =0; i < document.querySelectorAll(".navbar-icons").length; i++) {
+        	document.querySelectorAll(".navbar-icons")[i].classList.add("c-white");
 
     	}
-		for (var i =0; i < document.querySelectorAll(".input-group-addon").length; i++) {
-        	document.querySelectorAll(".input-group-addon")[i].classList.add("bg-black");
+		for (var i =0; i < document.querySelectorAll(".navbar-addon").length; i++) {
+        	document.querySelectorAll(".navbar-addon")[i].classList.add("bg-black");
 
     	}
 	}
 	if(window.innerWidth>700){ //Tablet
 		
-		for (var i =0; i < document.querySelectorAll(".material-icons").length; i++) {
-        	document.querySelectorAll(".material-icons")[i].classList.remove("c-white");
+		for (var i =0; i < document.querySelectorAll(".navbar-icons").length; i++) {
+        	document.querySelectorAll(".navbar-icons")[i].classList.remove("c-white");
 
     	}
-		for (var i =0; i < document.querySelectorAll(".input-group-addon").length; i++) {
-        	document.querySelectorAll(".input-group-addon")[i].classList.remove("bg-black");
+		for (var i =0; i < document.querySelectorAll(".navbar-addon").length; i++) {
+        	document.querySelectorAll(".navbar-addon")[i].classList.remove("bg-black");
 
     	}
 	}

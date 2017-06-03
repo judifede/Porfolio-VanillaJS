@@ -1,8 +1,5 @@
-
-body{
+#main{
 	text-align: center;
-	margin: auto;
-	/*-webkit-filter: contrast(75%);*/
 }
 #portraitPhoto{
 	width: 252px;
@@ -57,9 +54,6 @@ body{
 	padding: 0 !important;
 	cursor: pointer;
 }
-
-
-
 
 /*#cajaIconos div:hover + html{
 	overflow: hidden;
