@@ -9,31 +9,32 @@
         <link rel="stylesheet" type="text/css" href="css/flex.css"/>
         <link rel="stylesheet" type="text/css" href="css/nav.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Exo+2|Quicksand">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar-fixed-top">
 			<ul>
 				<li onclick="scrollToContent('pageSobreMi')">
 					<div class="input-group">
-						<span class="input-group-addon"><i class="material-icons">info</i></span>
+						<span class="input-group-addon navbar-addon"><i class="material-icons navbar-icons">info</i></span>
 						<p>Sobre Mi</p>
 					</div>
 				</li>
 				<li onclick="scrollToContent('pageProyectos')">
 					<div class="input-group">
-						<span class="input-group-addon"><i class="material-icons">card_travel</i></span>
+						<span class="input-group-addon navbar-addon"><i class="material-icons navbar-icons">card_travel</i></span>
 						<p>Proyectos</p>
 					</div>
 				</li>
-				<li onclick="scrollToContent('footerContacto')">
+				<li onclick="scrollToContent('footer')">
 					<div class="input-group">
-						<span class="input-group-addon"><i class="material-icons">phone</i></span>
+						<span class="input-group-addon navbar-addon"><i class="material-icons navbar-icons">phone</i></span>
 						<p>Contacto</p>
 					</div>
 				</li>
@@ -43,7 +44,7 @@
 		<section id="main">
 			<article>
 				<img src="img/Foto-Final.jpg" alt="portraitPhoto" id="portraitPhoto" onclick="styleNavMobile()">
-		        <h1 class="texto textHeader" id="nombre">JUAN DIEGO FERNÁNDEZ DÉNIZ</h1>
+		        <h1 class="texto textHeader" id="nombre">JUAN DIEGO <br> FERNÁNDEZ DÉNIZ</h1>
 		        <h2 class="texto textHeader" id="titulo">Desarrollador de Software</h2>
 		        <div id="cajaIconos">
 		            <div id="aboutMe" class="iconos">
@@ -58,15 +59,19 @@
 		            </div>
 		            <div id="contacto" class="iconos">
 		                <img src="img/icons/phone.png" alt="Contacto" class="imgIconos"
-		                onclick="scrollToContent('footerContacto')">
+		                onclick="scrollToContent('footer')">
 		                <p class="texto">CONTACTO</p>
 		            </div>
 		        </div>
 			</article>
 		</section>
+
 		<section style="background-color: yellow" id="pageSobreMi">
 			<article style="text-align: center;">
 				<h1>SOBRE MI</h1>
+				<div>
+					
+				</div>
 				bootstrap
 			</article>
 		</section>
@@ -78,33 +83,26 @@
 			</article>
 		</section>
 
-		<footer id="footerContacto">
-            <div id="leftFooter">
-            	<div id="tlf">
-	                <img src="img/icons/whatsapp.svg" alt="WhatsApp" class="imgFooter" />
-	                <img src="img/icons/telegram.svg" alt="Telegram" class="imgFooter" />
-	                <p>638 666 414</p>
-            	</div>
-            	<div id="email">
-	                <img src="img/icons/gmail.svg" alt="Gmail" class="imgFooter" />
+		<footer id="footer">
+			<div class="containter containter-footer">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                	<img src="img/icons/whatsapp.svg" alt="Whatsapp" class="imgFooter" />
+                	<img src="img/icons/telegram.svg" alt="Telegram" class="imgFooter" />
+                	<p id="numeroTLF">638 666 414</p>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<img src="img/icons/gmail.svg" alt="Gmail" class="imgFooter" />
 	                <p id="emailToCopy">judifede217@gmail.com</p>
 	                <i class="material-icons content_copy" onclick="toastCopied()" >content_copy</i>
-	                <span id="toastCopied">CORREO COPIADO</span>
-            	</div>
-            </div>
-            <div id="rightFooter">
-            	<p>Redes Sociales</p>
-	            <a href="">
-	                <img src="img/icons/facebook.svg" alt="Facebook" class="imgFooter" />
-	            </a>
-	            <a href="">
-	                <img src="img/icons/twitter.svg" alt="Twitter" class="imgFooter" />
-	            </a>
-            </div>
+	                <span id="toastCopied">EMAIL COPIADO</span>
+				</div>
+				<img src="img/icons/flecha-arriba.svg" id="flechaSubir" alt="flechaSubir" onclick="window.scrollTo(0, 0)"/>
+			</div>
         </footer>
+
         <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/common.js">
-        	
-        </script>
+        <script type="text/javascript">
+    
+  </script>
 	</body>
 </html>

@@ -24,8 +24,8 @@ ul li p{
 	color: #eee;
 	display: inline-block;
 }
-.input-group-addon.bg-black{ background: #000 !important;}/* Fondo Negro */
-.material-icons.c-white { color: #eee !important; }/* Color Blanco */
+.navbar-addon.bg-black{ background: #000 !important;}/* Fondo Negro */
+.navbar-icons.c-white { color: #eee !important; }/* Color Blanco */
 
 /*ul li:hover{
 	background: #eee;

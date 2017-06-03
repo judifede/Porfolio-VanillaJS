@@ -1,0 +1,9 @@
+<div class="col-lg-6 col-md-10 col-sm-10 ">
+	<h1>Redes Sociales</h1>
+	<a href="https://www.facebook.com/juandiego.fernandezdeniz" target="_blank">
+		<img src="img/icons/facebook.svg" alt="Facebook" class="imgFooter" />
+	</a>
+	<a href="https://twitter.com/Judixfede" target="_blank">
+		<img src="img/icons/twitter.svg" alt="Twitter" class="imgFooter" />
+	</a>
+</div>

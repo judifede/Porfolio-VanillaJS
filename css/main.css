@@ -1,8 +1,5 @@
-
-body{
+#main{
 	text-align: center;
-	margin: auto;
-	/*-webkit-filter: contrast(75%);*/
 }
 #portraitPhoto{
 	width: 252px;

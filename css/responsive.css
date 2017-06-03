@@ -2,7 +2,7 @@
 	.navbar-fixed-top{
 		display: none;
 	}
-	/*-----Main-----*/
+	/*-------------------- Main --------------------*/
 	.imgIconos{
 		width: 115px;
 		height: 115px;
@@ -13,14 +13,37 @@
 	#cajaIconos p{
 		font-size: 14pt;
 	}
+	h1.textHeader br{
+		display: none;
+	}
 	h1.textHeader{
 		font-size: 28pt;
 	}
 	h2.textHeader{
 		font-size: 22pt;
 	}
-	/*----- -----*/
-
+	/*-------------------- Footer --------------------*/
+	#toastCopied{
+		font-size: 12pt;
+	}
+	.containter-footer div p{
+		font-size: 16pt;
+	}
+	.imgFooter{
+		width: 60px;
+	}
+	.imgFooter[alt="Telegram"]{
+		width: 48px;
+		margin-right: 1.2vw;
+	}
+	.imgFooter[alt="Gmail"]{
+		height: 58px;
+		margin-right: 1.2vw;
+	}
+	#flechaSubir{
+		width: 50px;
+		height: 50px;
+	}
 }
 @media screen and (max-width: 1000px) { /* Tablets */
 	.navbar-fixed-top{
@@ -29,7 +52,7 @@
 	.input-group p{
 		display: block;
 	}
-	/*-----Main-----*/
+	/*-------------------- Main --------------------*/
 	.imgIconos{
 		width: 85px;
 		height: 85px;
@@ -40,14 +63,41 @@
 	#cajaIconos p{
 		font-size: 11pt;
 	}
+	h1.textHeader br{
+		display: none;
+	}
 	h1.textHeader{
 		font-size: 25pt;
 	}
 	h2.textHeader{
 		font-size: 19pt;
 	}
-	/*----- -----*/
-
+	/*-------------------- Footer --------------------*/
+	#toastCopied{
+		font-size: 9.5pt;
+	}
+	.containter-footer div p{
+		font-size: 13pt;
+	}
+	.containter-footer div{
+		margin-left: 10px !important;
+	}
+	.imgFooter{
+		width: 45px;
+	}
+	.imgFooter[alt="Telegram"]{
+		width: 36px;
+	}
+	.imgFooter[alt="Gmail"]{
+		height: 43px;
+	}
+	#flechaSubir{
+		width: 36px;
+		height: 36px;
+		clear: right;
+		text-align: center;
+		position: absolute;
+	}
 }
 
 @media screen and (max-width: 700px) { /* Móviles */
@@ -57,7 +107,7 @@
 	.input-group p{
 		display: none;
 	}
-	/*-----Main-----*/
+	/*-------------------- Main --------------------*/
 	.imgIconos{
 		width: 55px;
 		height: 55px;
@@ -68,11 +118,22 @@
 	#cajaIconos p{
 		font-size: 8pt;
 	}
+	h1.textHeader br{
+		display: block;
+	}
 	h1.textHeader{
 		font-size: 22pt;
 	}
 	h2.textHeader{
 		font-size: 16pt;
 	}
-	/*----- -----*/
+	/*-------------------- Footer --------------------*/
+	.containter-footer div p{
+		font-size: 15pt;
+	}
+	#flechaSubir{
+		clear: right;
+		text-align: center;
+		position: absolute;
+	}
 }

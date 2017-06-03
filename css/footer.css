@@ -1,42 +1,36 @@
-#footerContacto{
+footer{
 	overflow: hidden;
 	background-color: #84dee0;
-	padding: 20px 0 20px 0;
+	padding: 15px 0 15px 0;
 }
-#leftFooter{
-	text-align:left;
-	margin:auto;
-	vertical-align: middle;
-	display: inline-block;
-	width: 40%;
+.containter-footer{
+	text-align: left;
+	margin: 0 10px 0 10px;
 }
-#rightFooter{
-	text-align: right;
-	margin:auto;
-	vertical-align: middle;
-	display: inline-block;
-	width: 40%;
+.containter-footer div{
+	text-align: left;
 }
-#footerContacto div p{
-	font-size: 18pt;
+
+.containter-footer div p{
+	font-size: 16pt;
 	display: inline;
 }
-.imgFooter{
-	width: 70px;
-}
-.imgFooter[alt="Telegram"]{
-	width: 58px
+#flechaSubir{
+	cursor: pointer;
+	float: right;
+	display: inline;
+	position: relative;
+	right: 10px;
 }
 .imgFooter:hover{
 	transform: scale(1.1,1.1);
 }
-.imgFooter:first-child{
-	/*display: inline;*/
-}
 .material-icons.c-green { color: #00FF00 !important; }/* Color Verde Pastel */
 #toastCopied{
 	visibility: hidden;
+	font-weight: bold
 }
 .material-icons.content_copy { cursor: pointer; }/* Color Verde Pastel */
-
-
+#logos-tecnologias img{
+	width: 80px;
+}
