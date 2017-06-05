@@ -151,7 +151,7 @@
 	.imgFooter[alt="Gmail"]{
 		height: 33px;
 	}
-	.container-footer div p:last-of-type{
+	#emailToCopy{
 		font-size: 8pt;
 	}
 }
