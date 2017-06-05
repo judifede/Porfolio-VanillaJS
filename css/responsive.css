@@ -12,6 +12,7 @@
 	}
 	#cajaIconos p{
 		font-size: 14pt;
+		margin-top: 2px;
 	}
 	h1.textHeader br{
 		display: none;
@@ -26,7 +27,7 @@
 	#toastCopied{
 		font-size: 12pt;
 	}
-	.containter-footer div p{
+	.container-footer div p{
 		font-size: 16pt;
 	}
 	.imgFooter{
@@ -76,10 +77,10 @@
 	#toastCopied{
 		font-size: 9.5pt;
 	}
-	.containter-footer div p{
-		font-size: 13pt;
+	.container-footer div p{
+		font-size: 14pt;
 	}
-	.containter-footer div{
+	.container-footer div{
 		margin-left: 10px !important;
 	}
 	.imgFooter{
@@ -128,12 +129,29 @@
 		font-size: 16pt;
 	}
 	/*-------------------- Footer --------------------*/
-	.containter-footer div p{
+	.container-footer div{
+		padding: 0
+	}
+	.container-footer div p{
 		font-size: 15pt;
 	}
 	#flechaSubir{
 		clear: right;
 		text-align: center;
 		position: absolute;
+	}
+}
+@media screen and (max-width: 500px) {
+	.imgFooter{
+		width: 35px;
+	}
+	.imgFooter[alt="Telegram"]{
+		width: 26px;
+	}
+	.imgFooter[alt="Gmail"]{
+		height: 33px;
+	}
+	.container-footer div p:last-of-type{
+		font-size: 13.5pt;
 	}
 }
