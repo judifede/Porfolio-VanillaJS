@@ -3,15 +3,15 @@ footer{
 	background-color: #84dee0;
 	padding: 15px 0 15px 0;
 }
-.containter-footer{
+.container-footer{
 	text-align: left;
-	margin: 0 10px 0 10px;
+	margin: 0 10px 0 10px !important;
+	padding: 0 !important;
 }
-.containter-footer div{
+.container-footer div{
 	text-align: left;
 }
-
-.containter-footer div p{
+.container-footer div p{
 	font-size: 16pt;
 	display: inline;
 }
