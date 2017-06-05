@@ -141,3 +141,17 @@
 		position: absolute;
 	}
 }
+@media screen and (max-width: 500px) {
+	.imgFooter{
+		width: 35px;
+	}
+	.imgFooter[alt="Telegram"]{
+		width: 26px;
+	}
+	.imgFooter[alt="Gmail"]{
+		height: 33px;
+	}
+	.container-footer div p:last-of-type{
+		font-size: 13.5pt;
+	}
+}

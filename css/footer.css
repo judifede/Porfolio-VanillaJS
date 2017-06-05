@@ -27,7 +27,7 @@ footer{
 }
 .material-icons.c-green { color: #00FF00 !important; }/* Color Verde Pastel */
 #toastCopied{
-	visibility: hidden;
+	/*visibility: hidden;*/
 	font-weight: bold
 }
 .material-icons.content_copy { cursor: pointer; }/* Color Verde Pastel */

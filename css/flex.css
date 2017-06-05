@@ -1,7 +1,6 @@
 /*--------- Página flexible ---------*/
 body{
 	display: flex;
-	min-width: 435px;
 	margin: 37px 0;
 	padding: 0;
 	margin: 0;
@@ -9,8 +8,8 @@ body{
     background-color: rgba(228, 160, 016, 0.4) !important;/* Fondo Amarillo Pastel */
 }
 section{
+	min-height: 100vh;
 	padding-top: 37px;
 	flex: 1;
-	min-height: 100vh;
 }
 
