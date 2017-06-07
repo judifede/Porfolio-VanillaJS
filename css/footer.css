@@ -25,6 +25,14 @@ footer{
  	display: inline;
 	position: relative;
 }
+.imgFooter[alt="Linkedin"]{
+	position: absolute;
+	right: 75px;
+}
+.imgFooter[alt="Infojobs"]{
+	position: absolute;
+	right: 5px;
+}
 .imgFooter:hover{
 	transform: scale(1.1,1.1);
 }
@@ -33,7 +41,7 @@ footer{
 	display: none;
 	font-weight: bold
 }
-.material-icons.content_copy { cursor: pointer; }/* Color Verde Pastel */
+#iconoCopiarEmail { cursor: pointer; }/* Color Verde Pastel */
 #logos-tecnologias img{
 	width: 80px;
 }
