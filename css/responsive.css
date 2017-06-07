@@ -96,12 +96,12 @@
 	#toastCopied{
 		display: none;
 	}
-	.material-icons.content_copy{
-		display: none;
+	#iconoCopiarEmail{
+		display: none !important;
 	}
 }
 
-@media screen and (max-width: 700px) { /* Móviles */
+@media screen and (max-width: 768px) { /* Móviles */
 	.navbar-fixed-top{
 		display: block;
 	}
@@ -136,11 +136,22 @@
 	.container-footer div p{
 		font-size: 15pt;
 	}
+	.imgFooter[alt="Linkedin"]{
+		position: static;
+		text-align: center;
+	}
+	.imgFooter[alt="Infojobs"]{
+		position: static;
+		text-align: center;
+	}
+	#emailToCopy{
+		display: none;
+	}
 	#toastCopied{
 		display: none;
 	}
-	.material-icons.content_copy{
-		display: none;
+	#iconoCopiarEmail{
+		display: none !important;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -153,13 +164,13 @@
 	.imgFooter[alt="Gmail"]{
 		height: 33px;
 	}
-	.container-footer div p:last-of-type{
-		font-size: 12pt;
+	#emailToCopy{
+		display: none;
 	}
 	#toastCopied{
 		display: none;
 	}
-	.material-icons.content_copy{
-		display: none;
+	#iconoCopiarEmail{
+		display: none !important;
 	}
 }

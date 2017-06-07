@@ -99,27 +99,33 @@ Desde que era pequeño me he visto rodeado de la tecnología y de como nos ayuda
 
 		<footer id="footer">
 			<div class="container container-footer">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                	<img src="img/icons/whatsapp.svg" alt="Whatsapp" class="imgFooter" />
-                	<img src="img/icons/telegram.svg" alt="Telegram" class="imgFooter" />
-                	<p id="numeroTLF">638 666 414</p>
-				</div>
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+				<div class="col-lg-7 col-md-7 col-sm-5 col-xs-12">
 	                <a href="mailto:judifede217@gmail.com" id="emailLink">
 						<img src="img/icons/gmail.svg" alt="Gmail" class="imgFooter" />
 	                	<p id="emailToCopy">judifede217@gmail.com</p>
 	                </a>
-	                <i class="material-icons content_copy" onclick="toastCopied()" >content_copy</i>
+	                <i class="material-icons" id="iconoCopiarEmail" onclick="launchToast()" >content_copy</i>
 	                <span id="toastCopied">EMAIL COPIADO</span>
 				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
-	                <a href="https://www.linkedin.com/in/juan-diego-fern%C3%A1ndez-d%C3%A9niz-1b0009109/" target="_blank">
+				<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
+                	<img src="img/icons/whatsapp.svg" alt="Whatsapp" class="imgFooter" title="WhatsApp" />
+                	<img src="img/icons/telegram.svg" alt="Telegram" class="imgFooter" title="Telegram" />
+                	<p id="numeroTLF">638 666 414</p>
+				</div>
+				<div id="socialMedia">
+	                <a href="https://www.linkedin.com/in/juan-diego-fern%C3%A1ndez-d%C3%A9niz-1b0009109/"
+	                target="_blank" title="LinkedIn">
 						<img src="img/icons/linkedin.svg" alt="Linkedin" class="imgFooter" />
 	                </a>
+	                <a href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=4272204413564683842"
+	                target="_blank" title="InfoJobs">
+						<img src="img/icons/infojobs.png" alt="Infojobs" class="imgFooter" />
+					</a>
 				</div>
 			</div>
         </footer>
 
         <script type="text/javascript" src="js/common.js"></script>
+
 	</body>
 </html>
