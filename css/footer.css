@@ -5,7 +5,7 @@ footer{
 }
 .container-footer{
 	text-align: left;
-	margin: 0 10px 0 10px !important;
+	margin: 0 !important;
 	padding: 0 !important;
 }
 .container-footer div{
@@ -15,19 +15,22 @@ footer{
 	font-size: 16pt;
 	display: inline;
 }
+#container-arrow{
+	background-color: transparent;
+ 	text-align: right;
+}
 #flechaSubir{
+	opacity: 0.4; /* temporal */
 	cursor: pointer;
-	float: right;
-	display: inline;
+ 	display: inline;
 	position: relative;
-	right: 10px;
 }
 .imgFooter:hover{
 	transform: scale(1.1,1.1);
 }
 .material-icons.c-green { color: #00FF00 !important; }/* Color Verde Pastel */
 #toastCopied{
-	visibility: hidden;
+	display: none;
 	font-weight: bold
 }
 .material-icons.content_copy { cursor: pointer; }/* Color Verde Pastel */

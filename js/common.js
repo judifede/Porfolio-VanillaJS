@@ -18,7 +18,7 @@ function findPosition(obj) {
 
 function scrollToContent(content){
 
-	switch(content){
+	switch(content){ 
 		case "pageSobreMi":
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;
@@ -77,7 +77,7 @@ function copiarAlPortapapeles(id_elemento) {
 function toastCopied() {
 	var message = document.getElementById('toastCopied');
 	copiarAlPortapapeles('emailToCopy');
-	message.style.visibility = "visible";
+	message.style.display = "inline";
     setTimeout(function(){	message.style.visibility = "hidden";  }, 4000);
 }
 
