@@ -1,5 +1,9 @@
 #main{
 	text-align: center;
+    background-color: rgba(228, 160, 016, 0.4) !important;/* Fondo Amarillo Pastel */
+	/*background-image:url(../img/wallpaper/madera.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat;*/
 }
 #portraitPhoto{
 	width: 252px;
