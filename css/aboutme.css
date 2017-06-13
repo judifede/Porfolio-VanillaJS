@@ -1,11 +1,39 @@
 #pageSobreMi{
-	background-color: #B0F2C2;
-	padding-bottom: 10px;
+	background-color: rgba(0, 0, 255, 0.28);/* Azul pastel*/
+	padding-bottom: 37px;
 }
 #pageSobreMi article{
 	text-align: center;
 }
 #pageSobreMi article div div p{
 	font-size: 14pt;
+	text-align: justify;
 }
-
+.container-SobreMi{
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+.container-SobreMi div:nth-of-type(2), .container-SobreMi div:nth-of-type(4){
+	border: 2px solid black;
+	background-color: rgba(0, 0, 255, 0.20);
+	float: right;
+}
+.container-SobreMi div:nth-of-type(2){
+	border-bottom: 1px solid black;
+}
+.container-SobreMi div:nth-of-type(4){
+	border-top: 1px solid black;
+}
+.imgTecno{
+	margin: 7px;
+	/*border: 1px solid black;*/
+}
+#container-conoceme{
+	margin-bottom: 25px;
+}
+#container-conoceme p{
+}
+h3{
+	/*text-align: left;*/
+}
+p a{color: green}
