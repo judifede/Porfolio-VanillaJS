@@ -28,7 +28,10 @@
 		width: 115px;
 		height: 115px;
 	}
-	
+	#pageSobreMi article div div p{
+		font-size: 14pt;
+		text-align: justify;
+	}
 
 
 
@@ -91,6 +94,10 @@
 	.imgTecno{
 		width: 85px;
 		height: 85px;
+	}
+	#pageSobreMi article div div p{
+		font-size: 12pt;
+		text-align: justify;
 	}
 
 
@@ -163,6 +170,10 @@
 		width: 55px;
 		height: 55px;
 	}
+	#pageSobreMi article div div p{
+		font-size: 10pt;
+		text-align: justify;
+	}
 
 
 
@@ -210,13 +221,13 @@
 
 	/*-------------------- Footer --------------------*/
 	.imgFooter{
-		width: 55px;
+		width: 45px;
 	}
 	.imgFooter[alt="Telegram"]{
-		width: 46px;
+		width: 36px;
 	}
 	.imgFooter[alt="Gmail"]{
-		height: 53px;
+		height: 43px;
 	}
 	#emailToCopy{
 		display: none;
