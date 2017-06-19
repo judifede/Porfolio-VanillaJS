@@ -1,5 +1,5 @@
 #pageSobreMi{
-	background-color: rgba(0, 0, 255, 0.28);/* Azul pastel*/
+	background-color: rgba(200, 200, 200, 0.4);/*  pastel*/
 	padding-bottom: 37px;
 }
 #pageSobreMi article{
@@ -13,20 +13,14 @@
 	margin-left: 3vw;
 	margin-right: 3vw;
 }
-.container-SobreMi div{
-}
-.container-SobreMi div:nth-of-type(2), .container-SobreMi div:nth-of-type(4){
-	background-color: rgba(0, 0, 255, 0.14);
+#container-exp-fct, #container-conoceme{
+	/*background-color: rgba(0, 0, 255, 0.14);*/
 	float: right;
 }
 .imgTecno{
 	margin: 7px;
-	/*border: 1px solid black;*/
 }
 #container-conoceme{
 	margin-bottom: 25px;
 }
-h3{
-	/*text-align: left;*/
-}
-p a{color: green}
+#pageSobreMi p a{color: rgba(0, 100, 0, 1);}

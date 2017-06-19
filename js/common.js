@@ -79,8 +79,9 @@ function launchToast() {
 	var toastCopied = document.getElementById('toastCopied');
 	var iconoCopiarEmail = document.getElementById('iconoCopiarEmail');
 	copiarAlPortapapeles('emailToCopy');
-	toastCopied.style.display = "inline";
+	toastCopied.style.display = "block";
 	iconoCopiarEmail.style.display = "none";
+	toastCopied.scrollIntoView(true);
     setTimeout(function(){	
     	toastCopied.style.display = "none";
     	iconoCopiarEmail.style.display = "inline";

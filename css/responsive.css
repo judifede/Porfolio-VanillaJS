@@ -3,7 +3,7 @@
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
-	.imgIconos{
+	.imgScrollTo{
 		width: 115px;
 		height: 115px;
 	}
@@ -35,17 +35,15 @@
 
 
 
-
-
-
-
-
 	/*-------------------- Footer --------------------*/
 	#toastCopied{
 		font-size: 12pt;
 	}
 	.container-footer div p{
 		font-size: 16pt;
+	}
+	.titulosMV{
+		display: none !important;
 	}
 	.imgFooter{
 		width: 60px;
@@ -57,6 +55,14 @@
 	.imgFooter[alt="Gmail"]{
 		height: 48px;
 		margin-right: 1.2vw;
+	}
+	#container-scrollTo-Footer{
+		width: 30%;
+		height: 120px;
+
+	}
+	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
+		display: inline-block;
 	}
 	#flechaSubir{
 		width: 50px;
@@ -71,7 +77,7 @@
 		display: block;
 	}
 	/*-------------------- Main --------------------*/
-	.imgIconos{
+	.imgScrollTo{
 		width: 85px;
 		height: 85px;
 	}
@@ -103,17 +109,15 @@
 
 
 
-
-
-
-
-
 	/*-------------------- Footer --------------------*/
 	.container-footer div{
 		text-align: center;
 	}
 	.container-footer div p{
 		font-size: 14pt;
+	}
+	.titulosMV{
+		display: inline !important;
 	}
 	.imgFooter{
 		width: 45px;
@@ -123,6 +127,13 @@
 	}
 	.imgFooter[alt="Gmail"]{
 		height: 43px;
+	}
+	#containter-scrollTo-Footer{
+		width: 20%;
+		height: 60px;
+	}
+	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
+		display: none;
 	}
 	#flechaSubir{
 		width: 36px;
@@ -146,7 +157,7 @@
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
-	.imgIconos{
+	.imgScrollTo{
 		width: 55px;
 		height: 55px;
 	}
@@ -177,27 +188,27 @@
 
 
 
-
-
-
-
-
-
 	/*-------------------- Footer --------------------*/
 	.container-footer div{
-		padding: 0
+		padding: 0;
 		margin-left: 10px !important;
 	}
 	.container-footer div p{
-		font-size: 15pt;
+		font-size: 13pt;
 	}
+	.titulosMV{
+		display: none !important;
+	}
+
 	.imgFooter[alt="Linkedin"]{
-		position: static;
-		text-align: center;
+		display: block;
 	}
-	.imgFooter[alt="Infojobs"]{
-		position: static;
-		text-align: center;
+	#containter-scrollTo-Footer{
+		width: 10%;
+		height: 30px;
+	}
+	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
+		display: none;
 	}
 	#emailToCopy{
 		display: none;
@@ -208,6 +219,7 @@
 	#iconoCopiarEmail{
 		display: none !important;
 	}
+	
 }
 @media screen and (max-width: 500px) {
 	/*-------------------- About Me --------------------*/
