@@ -42,10 +42,6 @@
 	.container-footer div p{
 		font-size: 16pt;
 	}
-	#textoFooter{
-		font-size: 12pt;
-		display: block;
-	}
 	.titulosMV{
 		display: none !important;
 	}
