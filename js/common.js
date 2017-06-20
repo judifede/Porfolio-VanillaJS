@@ -79,11 +79,11 @@ function launchToast() {
 	var toastCopied = document.getElementById('toastCopied');
 	var iconoCopiarEmail = document.getElementById('iconoCopiarEmail');
 	copiarAlPortapapeles('emailToCopy');
-	toastCopied.style.display = "block";
+	toastCopied.style.visibility = "visible";
 	iconoCopiarEmail.style.display = "none";
 	toastCopied.scrollIntoView(true);
     setTimeout(function(){	
-    	toastCopied.style.display = "none";
+    	toastCopied.style.visibility = "hidden";
     	iconoCopiarEmail.style.display = "inline";
       }, 4000);
 }

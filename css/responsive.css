@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px) { /* Escritorio */
+@media screen and (min-width: 1500px) { /* Escritorio Grande*/
 	.navbar-fixed-top{
 		display: none;
 	}
@@ -24,9 +24,9 @@
 		font-size: 22pt;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecno{
-		width: 115px;
-		height: 115px;
+	.imgTecnologias{
+		width: 100px;
+		height: 100px;
 	}
 	#pageSobreMi article div div p{
 		font-size: 14pt;
@@ -69,6 +69,92 @@
 		height: 50px;
 	}
 }
+
+@media screen and (max-width: 1500px) { /* Escritorio */
+	.navbar-fixed-top{
+		display: none;
+	}
+	/*-------------------- Main --------------------*/
+	.imgScrollTo{
+		width: 115px;
+		height: 115px;
+	}
+	#cajaIconos{
+		display: block;
+	}
+	#cajaIconos p{
+		font-size: 14pt;
+		margin-top: 2px;
+	}
+	h1.textHeader br{
+		display: none;
+	}
+	h1.textHeader{
+		font-size: 28pt;
+	}
+	h2.textHeader{
+		font-size: 22pt;
+	}
+	/*-------------------- About Me --------------------*/
+	.imgTecnologias{
+		width: 95px;
+		height: 95px;
+		margin: 2px;
+	}
+	#pageSobreMi article div div p{
+		font-size: 14pt;
+	}
+
+
+
+	/*-------------------- Footer --------------------*/
+	#toastCopied{
+		font-size: 12pt;
+	}
+	.container-footer div p{
+		font-size: 16pt;
+	}
+	.titulosMV{
+		display: none !important;
+	}
+	.imgFooter{
+		width: 45px;
+	}
+	.imgFooter[alt="Telegram"]{
+		width: 38px;
+		margin-right: 1.2vw;
+	}
+	.imgFooter[alt="Gmail"]{
+		width: 45px;
+		height: 38px;
+		margin-right: 1.2vw;
+		margin-left: 2px;
+	}
+	.imgFooter[alt="Linkedin"], .imgFooter[alt="Infojobs"]{
+		
+	}
+	#container-numeroTLF-direccion{
+		margin-left: 20%;
+	}
+	#container-scrollTo-Footer{
+		width: 15%;
+		height: 50px;
+		float: right;
+	}
+	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
+		display: inline-block;
+	}
+	#flechaSubir{
+		text-align: right !important;
+		float: right;
+		width: 50px;
+		height: 50px;
+		position: relative;
+		left: 10px;
+		top: 30px;
+	}
+}
+
 @media screen and (max-width: 1000px) { /* Tablets */
 	.navbar-fixed-top{
 		display: block;
@@ -97,13 +183,13 @@
 		font-size: 19pt;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecno{
+	.imgTecnologias{
 		width: 85px;
 		height: 85px;
 	}
 	#pageSobreMi article div div p{
 		font-size: 12pt;
-		text-align: justify;
+		text-align: center;
 	}
 
 
@@ -127,6 +213,9 @@
 	}
 	.imgFooter[alt="Gmail"]{
 		height: 43px;
+	}
+	#container-numeroTLF-direccion{
+		margin-left: 10%;
 	}
 	#containter-scrollTo-Footer{
 		width: 20%;
@@ -177,7 +266,7 @@
 		font-size: 16pt;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecno{
+	.imgTecnologias{
 		width: 55px;
 		height: 55px;
 	}
@@ -199,9 +288,26 @@
 	.titulosMV{
 		display: none !important;
 	}
-
+	.imgFooter[alt="Gmail"]{
+		margin-right: 0;
+	}
 	.imgFooter[alt="Linkedin"]{
 		display: block;
+		margin: auto;
+	}
+	#container-email-socialMedia{
+		width: 100%;
+	}
+	#container-socialMedia{
+		border: none;
+	}
+	#container-numeroTLF-direccion{
+		width: 100%;
+	}
+	#diaActualizado{
+		border: none;
+		display: block;
+		text-align: center;
 	}
 	#containter-scrollTo-Footer{
 		width: 10%;
@@ -221,9 +327,10 @@
 	}
 	
 }
+
 @media screen and (max-width: 500px) {
 	/*-------------------- About Me --------------------*/
-	.imgTecno{
+	.imgTecnologias{
 		width: 50px;
 		height: 50px;
 	}

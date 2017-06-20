@@ -13,12 +13,15 @@
 	margin-left: 3vw;
 	margin-right: 3vw;
 }
+#container-educacion p{
+	text-align: center !important;
+}
 #container-exp-fct, #container-conoceme{
 	/*background-color: rgba(0, 0, 255, 0.14);*/
 	float: right;
 }
-.imgTecno{
-	margin: 7px;
+.imgTecnologias{
+	margin: 3px;
 }
 #container-conoceme{
 	margin-bottom: 25px;

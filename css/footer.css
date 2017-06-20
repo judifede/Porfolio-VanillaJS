@@ -13,16 +13,26 @@ footer{
 	
 }
 #container-socialMedia{
-	
+	padding-top: 3px;
+	border: 1px dotted rgba(1,1,1,0.8);
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
 }
 #container-numeroTLF-direccion{
-	float: right;
-	text-align: right;
+	text-align: center;
 	display: inline-block;
+	margin: auto;
+
 }
-#direccion{
+#diaActualizado{
+	margin-top: 3px;
 	display: block;
-	text-align: right;
+	text-align: center;
+	border: 1px dotted rgba(1,1,1,0.8);
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
 }
 #container-scrollTo-Footer{
 	float: right;
@@ -44,7 +54,9 @@ footer{
 	color: black;
 }
 #toastCopied{
-	display: none;
+	margin-top: 2px;
+	visibility: hidden;
+	display: block;
 	font-weight: bold
 }
 /*
