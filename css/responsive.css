@@ -163,9 +163,8 @@
 		display: block;
 	}
 	/*-------------------- Main --------------------*/
-	.imgScrollTo{
-		width: 85px;
-		height: 85px;
+	#portraitPhoto{
+		margin: 25px 0 10px;
 	}
 	#cajaIconos{
 		display: none;
@@ -178,10 +177,13 @@
 	}
 	h1.textHeader{
 		font-size: 25pt;
+		margin-top: 20px !important;
 	}
 	h2.textHeader{
 		font-size: 19pt;
+		margin-top: 20px !important;
 	}
+
 	/*-------------------- About Me --------------------*/
 	.imgTecnologias{
 		width: 85px;
@@ -246,9 +248,8 @@
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
-	.imgScrollTo{
-		width: 55px;
-		height: 55px;
+	#portraitPhoto{
+		margin: 25px 0 10px;
 	}
 	#cajaIconos{
 		display: none;
@@ -261,9 +262,11 @@
 	}
 	h1.textHeader{
 		font-size: 22pt;
+		margin-top: 20px !important;
 	}
 	h2.textHeader{
 		font-size: 16pt;
+		margin-top: 20px !important;
 	}
 	/*-------------------- About Me --------------------*/
 	.imgTecnologias{
@@ -280,7 +283,6 @@
 	/*-------------------- Footer --------------------*/
 	.container-footer div{
 		padding: 0;
-		margin-left: 10px !important;
 	}
 	.container-footer div p{
 		font-size: 13pt;
@@ -291,18 +293,23 @@
 	.imgFooter[alt="Gmail"]{
 		margin-right: 0;
 	}
-	.imgFooter[alt="Linkedin"]{
-		display: block;
-		margin: auto;
+	#container-socialMedia a[title="LinkedIn"]{
+		margin-left: 30vw;
+		margin-right: 30vw;
 	}
 	#container-email-socialMedia{
 		width: 100%;
+	}
+	#container-email-socialMedia div{
+		display: inline;
+		float: left;
 	}
 	#container-socialMedia{
 		border: none;
 	}
 	#container-numeroTLF-direccion{
 		width: 100%;
+		margin-left: 0;
 	}
 	#diaActualizado{
 		border: none;
@@ -347,6 +354,10 @@
 	}
 	.imgFooter[alt="Gmail"]{
 		height: 43px;
+	}
+	#container-socialMedia a[title="LinkedIn"]{
+		margin-left: 25vw;
+		margin-right: 25vw;
 	}
 	#emailToCopy{
 		display: none;
