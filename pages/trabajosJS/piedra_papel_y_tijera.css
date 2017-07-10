@@ -1,0 +1,158 @@
+body{
+	text-align: center;
+	margin: auto;
+	padding: 2%;
+	background-image: url(../../img/wallpaper/fondoPapel.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+h2{
+	display: inline;
+	margin: auto auto 4% auto;
+	font-family: GirlsHaveManySecrets;
+}
+#container-main{
+	margin: auto;
+	text-align: center;
+}
+#registro{ /*-------------------------------MIRAR */
+	height: 2%;
+    width: 80%;
+	margin: 2% auto;
+	text-align: center;
+	position: static;
+	top: 10%;
+    right: 50%;
+}
+#registro p{
+	margin: auto 5% auto 5%;
+	display: inline;
+	text-align: center;
+	font-family: cinnamoncake;
+	font-weight: bold;
+}
+fieldset{
+	font-family: cinnamoncake;
+	font-weight: bold;
+	display: inline;
+	border-color: black;
+}
+#Rival{
+	margin: 1% auto auto 8%;
+}
+#VS{
+	display: inline;
+	position: relative;
+	top: -120px;
+	font-family: PressStart2P;
+	margin: auto 0.7% auto 1%;
+}
+#atras{
+	width: 80px;
+	height: 80px;
+	text-align: left;
+	margin: auto 20px;
+}
+#Opciones{
+	text-align: center;
+	display: inline;
+	width: 300px;
+	margin: auto;
+}
+.Opcion{
+	display: inline;
+}
+#Resultado{
+	font-family: GirlsHaveManySecrets;
+	font-weight: bold;
+	margin: 3% 1% 2% auto;
+	display: inline;
+}
+#botonJ{
+	margin: 8% auto auto auto;
+	width: 70px;
+	height: 25px;
+}
+/*------------------------------------ RESPONSIVE ------------------------------------*/
+
+@media screen and (min-width: 1500px) { /* Escritorio Grande*/
+	
+}
+
+@media screen and (max-width: 1500px) { /* Escritorio */
+	h2{
+		font-size: 45pt;
+	}
+	#registro p{
+		font-size: 16pt;
+	}
+	fieldset{
+		font-size: 14pt;
+	}
+	#VS{
+		font-size: 30pt;
+	}
+	#CPU{
+		height: 200px;
+		width: 160px;	
+	}
+	#User{
+		height: 200px;
+		width: 160px;	
+	}
+	#Resultado{
+		font-size: 32pt;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) { /* Tablets */
+	h2{
+		font-size: 37pt;
+	}
+	#registro p{
+		font-size: 14pt;
+	}
+	fieldset{
+		font-size: 12pt;
+	}
+	#VS{
+		font-size: 26pt;
+	}
+	#CPU{
+		height: 160px;
+		width: 120px;	
+	}
+	#User{
+		height: 160px;
+		width: 120px;	
+	}
+	#Resultado{
+		font-size: 32pt;
+	}
+}
+
+@media screen and (max-width: 768px) { /* Móviles */
+	
+	
+}
+
+@media screen and (max-width: 500px) {
+	
+}
+
+
+
+
+/*------------------------------------ FUENTES ------------------------------------*/
+@font-face{
+	font-family: PressStart2P; src: url('../../fonts/PressStart2P.ttf')
+}
+@font-face{
+	font-family: GirlsHaveManySecrets; src: url('../../fonts/Girls Have Many Secrets.ttf')
+}
+@font-face{
+	font-family: cinnamoncake; src: url('../../fonts/cinnamoncake.ttf')
+}
+
+

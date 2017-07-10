@@ -1,0 +1,49 @@
+body{
+	background-image: url(../../img/trabajosJS/puño.jpg);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+#moneda{
+	height: 250px;
+	width: 250px;
+}
+#atras{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 3% auto auto 3%;
+}
+#boton{
+	font-size: 16pt;
+	position: absolute;
+	top: 35%;
+	right: 18%;
+}
+fieldset{
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 17%;
+	font-family: Arial;
+	visibility: hidden;
+}
+#out{
+	font-family: Arial;
+}
+#movimiento{
+	-webkit-animation-name: animacion;
+	-webkit-animation-duration: 2.1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: forwards;
+ 	-webkit-animation-play-state: paused;
+	text-align: center; 
+	position: absolute; 
+	left: 40%;
+	top: 30%;
+}	
+@-webkit-keyframes animacion { 
+	0% { left: 40%; top: 30%; } 
+	50% { left: 40%; top: 5%; } 
+	100% { left: 40%; top: 30%; }
+}

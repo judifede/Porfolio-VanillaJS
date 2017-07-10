@@ -25,6 +25,12 @@ function scrollToContent(content){
 		case "pageProyectos":
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;
+		case "proyecto-abaco":
+			window.scroll(0,findPosition(document.getElementById(content)));
+			break;
+		case "container-exp-fct":
+			window.scroll(0,findPosition(document.getElementById(content)));
+			break;
 		case "footer":
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;

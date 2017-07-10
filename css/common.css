@@ -12,7 +12,10 @@ section{
 	padding-top: 37px;
 	flex: 1;
 }
-
+.textHeader{
+	letter-spacing: 1px;
+	font-family: 'Exo 2', sans-serif !important;
+}
 
 /*background-color: rgba(255, 0, 0, 0.5);/* Rojo pastel*/
 /*background-color: rgba(255, 64, 0, 0.4);/* Naranja pastel*/

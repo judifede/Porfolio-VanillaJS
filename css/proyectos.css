@@ -1,8 +1,16 @@
 #pageProyectos{
-	/*background-color: rgba(0, 255, 0, 0.4);/* Verde pastel*/
-	/*background-color: rgba(0, 0, 255, 0.4);/* Azul pastel*/
 	background-color: rgba(76, 40, 130, 0.4);/* Violeta pastel*/
-	
 }
-
-/*#B0C2F2 azul pastel*/
+.container-proyecto{
+	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
+	margin-bottom: 2vh;
+	padding: 1vh;
+}
+.container-proyecto .btn-primary a{ color: #fff }
+.imgTecnologias{
+	width: 80px;
+	height: 80px
+}
+#irContainer-Exp-FCT{
+	cursor: pointer;
+}

@@ -7,7 +7,7 @@
 }
 #pageSobreMi article div div p{
 	font-size: 14pt;
-	text-align: justify;
+	text-align: center;
 }
 .container-SobreMi{
 	margin-left: 3vw;
@@ -25,5 +25,8 @@
 }
 #container-conoceme{
 	margin-bottom: 25px;
+}
+#irProyecto-Abaco{
+	cursor: pointer;
 }
 #pageSobreMi p a{color: rgba(0, 100, 0, 1);}
