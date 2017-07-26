@@ -37,7 +37,6 @@ function createManagementImages(proyecto){
 		section.appendChild(img);
 		section.appendChild(p);	
 	}
-
 	
 }
 
