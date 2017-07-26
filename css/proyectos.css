@@ -1,6 +1,9 @@
 #pageProyectos{
 	background-color: rgba(76, 40, 130, 0.4);/* Violeta pastel*/
 }
+#pageProyectos article{
+	text-align: center;
+}
 .container-proyecto{
 	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
 	margin-bottom: 2vh;

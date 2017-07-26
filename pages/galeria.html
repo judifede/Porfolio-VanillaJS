@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Galería</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<title>Galería</title>
+		<meta name="author" content="Judifede"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/galeria.css"/>
+	</head>
+	<body>
+		<h1>Galería</h1>
+		<a href="../index.html">
+			<img src="../img/trabajosJS/Arrow.png" alt="atras" id="atras"/>
+		</a>
+	    <article id="c-slider">
+
+	        <div id="slider" onmouseover="stop()" onmouseout="autoplay()">
+	            
+	            
+	        </div>
+	        
+	        <div id="btn-prev">&#60;</div>
+	        <div id="btn-next">&#62;</div>
+	    </article>
+	    <!--Scripts-->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	    <script src="../js/galeria.js"></script>
+	    <script src="../js/slider.js"></script>
+	</body>
 </html>
+
+
+<!--
+
+<section class="imgGaleria">
+	                <img src="../img/galeria/Abaco/AbacoContacto1.png" alt="imgGaleria1" id="imgGaleria1">
+	            </section>
+
+	            <section class="imgGaleria">
+	                <img src="../img/galeria/Abaco/AbacoContacto2.png" alt="imgGaleria2" id="imgGaleria2">
+	            </section>
+-->

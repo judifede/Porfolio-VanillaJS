@@ -71,6 +71,7 @@ var screen768 = window.matchMedia("screen and (max-width: 768px)");
 screen768.addListener(styleNavResponsive);
 
 /* Footer */
+/*
 function copiarAlPortapapeles(id_elemento) {
 	var aux = document.createElement("input");
 	aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
@@ -92,5 +93,5 @@ function launchToast() {
     	toastCopied.style.visibility = "hidden";
     	iconoCopiarEmail.style.display = "inline";
       }, 4000);
-}
+}*/
 

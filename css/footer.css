@@ -1,74 +1,57 @@
 footer{
 	overflow: hidden;
-	background-color: #84dee0; /* Celeste */
+	background-color: rgba(127, 127, 127, 0.5) !important;/* Fondo Gris Oscuro */
 	padding: 15px 0 15px;/*top y bot*/
+	text-align: center;
 }
-#container-email-socialMedia{
-	float: left;
-	text-align: left !important;
+#container-number-email{
+	width: 40%;
+	height: 100px;
+	text-align: center;
 	margin: auto;
 	display: inline-block;
 }
-#container-email{
+#container-number{
 	
 }
+#numeroTLF{
+	vertical-align: middle;
+}
+#container-email{
+	margin-top: 10px;
+}
 #container-socialMedia{
-	padding-top: 3px;
+	width: 40%;
+	height: 100px;
+	margin: auto;
+	display: inline-block;
+}
+#container-socialMedia h2{
+	margin-top: 0px;
+	font-size: 22pt;
+}
+#container-legalidad{
+	width: 30%;
+	margin: auto;
+	margin-top: 15px;
+}
+#container-legalidad span{
+	display: inline;
 	border: 1px dotted rgba(1,1,1,0.8);
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
 }
-#container-numeroTLF-direccion{
-	text-align: center;
-	display: inline-block;
-	margin: auto;
-
-}
-#diaActualizado{
-	margin-top: 3px;
-	display: block;
-	text-align: center;
-	border: 1px dotted rgba(1,1,1,0.8);
-	border-right: none;
-	border-left: none;
-	border-bottom: none;
-}
-#container-scrollTo-Footer{
-	float: right;
-}
-.imgScrollTo-Footer{
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	margin: auto;
-	display: inline-block;
-	border-radius: 50%;
-	cursor: pointer;
+#container-socialMedia-images{
+	margin-top: 20px
 }
 .container-footer div p{
 	font-size: 16pt;
 	display: inline;
 }
-.titulosMV, #emailToCopy{
+#emailToCopy{
 	color: black;
 }
-#toastCopied{
-	margin-top: 2px;
-	visibility: hidden;
-	display: block;
-	font-weight: bold
-}
-/*
-.imgFooter[alt="Linkedin"]{
-	position: absolute;
-	right: 75px;
-}
-.imgFooter[alt="Infojobs"]{
-	position: absolute;
-	right: 5px;
-}*/
 .imgFooter:hover, .imgScrollTo-Footer:hover{
 	transform: scale(1.1,1.1);
 }
-#iconoCopiarEmail { cursor: pointer; }

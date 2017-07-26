@@ -4,6 +4,7 @@ ul{
 	list-style-type: none;
 	display: flex;
 	padding-left: 0;
+	user-select: none;
 }
 ul li{
  	list-style-type: none;
@@ -11,7 +12,7 @@ ul li{
 	box-sizing: border-box;
 	text-align: center;
 	background: #000;
-	border-right: 4px solid darkgrey;
+	border-right: 2px solid darkgrey;
 	cursor: pointer;
 }
 ul li:last-child{
@@ -26,12 +27,3 @@ ul li p{
 }
 .navbar-addon.bg-black{ background: #000 !important;}/* Fondo Negro */
 .navbar-icons.c-white { color: #eee !important; }/* Color Blanco */
-
-/*ul li:hover{
-	background: #eee;
-}*/
-/*ul li:hover p:{
-	color: #000;
-	text-decoration: none;
-}*/
-.

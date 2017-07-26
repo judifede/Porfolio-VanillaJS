@@ -10,15 +10,11 @@
 	text-align: center;
 }
 .container-SobreMi{
-	margin-left: 3vw;
-	margin-right: 3vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 #container-educacion p{
 	text-align: center !important;
-}
-#container-exp-fct, #container-conoceme{
-	/*background-color: rgba(0, 0, 255, 0.14);*/
-	float: right;
 }
 .imgTecnologias{
 	margin: 3px;

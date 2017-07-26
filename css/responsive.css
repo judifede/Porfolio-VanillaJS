@@ -56,14 +56,6 @@
 		height: 48px;
 		margin-right: 1.2vw;
 	}
-	#container-scrollTo-Footer{
-		width: 30%;
-		height: 120px;
-
-	}
-	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
-		display: inline-block;
-	}
 	#flechaSubir{
 		width: 50px;
 		height: 50px;
@@ -127,31 +119,16 @@
 	.imgFooter[alt="Gmail"]{
 		width: 45px;
 		height: 38px;
-		margin-right: 1.2vw;
-		margin-left: 2px;
+		margin-right: 0.5vw;
 	}
 	.imgFooter[alt="Linkedin"], .imgFooter[alt="Infojobs"]{
 		
-	}
-	#container-numeroTLF-direccion{
-		margin-left: 20%;
-	}
-	#container-scrollTo-Footer{
-		width: 15%;
-		height: 50px;
-		float: right;
-	}
-	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
-		display: inline-block;
 	}
 	#flechaSubir{
 		text-align: right !important;
 		float: right;
 		width: 50px;
 		height: 50px;
-		position: relative;
-		left: 10px;
-		top: 30px;
 	}
 }
 
@@ -195,8 +172,6 @@
 	}
 
 
-
-
 	/*-------------------- Footer --------------------*/
 	.container-footer div{
 		text-align: center;
@@ -216,27 +191,10 @@
 	.imgFooter[alt="Gmail"]{
 		height: 43px;
 	}
-	#container-numeroTLF-direccion{
-		margin-left: 10%;
-	}
-	#containter-scrollTo-Footer{
-		width: 20%;
-		height: 60px;
-	}
-	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
-		display: none;
-	}
 	#flechaSubir{
 		width: 36px;
 		height: 36px;
 	}
-	#toastCopied{
-		display: none;
-	}
-	#iconoCopiarEmail{
-		display: none !important;
-	}
-	
 
 }
 
@@ -278,8 +236,6 @@
 		text-align: justify;
 	}
 
-
-
 	/*-------------------- Footer --------------------*/
 	.container-footer div{
 		padding: 0;
@@ -287,50 +243,27 @@
 	.container-footer div p{
 		font-size: 13pt;
 	}
+	#container-number-email{
+		width: 100%;
+	}
+	#container-socialMedia{
+		width: 100%;
+	}
+	#container-socialMedia h2{
+		margin-top: 10px;
+		font-size: 20pt;
+	}
+	#container-legalidad{
+		width: 50%;
+	}
+	#container-legalidad span{
+		display: block;
+	}
 	.titulosMV{
 		display: none !important;
 	}
 	.imgFooter[alt="Gmail"]{
-		margin-right: 0;
-	}
-	#container-socialMedia a[title="LinkedIn"]{
-		margin-left: 30vw;
-		margin-right: 30vw;
-	}
-	#container-email-socialMedia{
-		width: 100%;
-	}
-	#container-email-socialMedia div{
-		display: inline;
-		float: left;
-	}
-	#container-socialMedia{
-		border: none;
-	}
-	#container-numeroTLF-direccion{
-		width: 100%;
-		margin-left: 0;
-	}
-	#diaActualizado{
-		border: none;
-		display: block;
-		text-align: center;
-	}
-	#containter-scrollTo-Footer{
-		width: 10%;
-		height: 30px;
-	}
-	#container-scrollTo-Footer img:nth-child(2), #container-scrollTo-Footer img:nth-child(3){
-		display: none;
-	}
-	#emailToCopy{
-		display: none;
-	}
-	#toastCopied{
-		display: none;
-	}
-	#iconoCopiarEmail{
-		display: none !important;
+		
 	}
 	
 }
@@ -342,10 +275,22 @@
 		height: 50px;
 	}
 
-
-
-
 	/*-------------------- Footer --------------------*/
+	#container-number-email{
+		width: 100%;
+	}
+	#container-socialMedia{
+		width: 100%;
+	}
+	#container-socialMedia h2{
+		font-size: 18pt;
+	}
+	#container-legalidad{
+		width: 60%;
+	}
+	#container-legalidad span{
+		display: block;
+	}
 	.imgFooter{
 		width: 45px;
 	}
@@ -354,18 +299,5 @@
 	}
 	.imgFooter[alt="Gmail"]{
 		height: 43px;
-	}
-	#container-socialMedia a[title="LinkedIn"]{
-		margin-left: 25vw;
-		margin-right: 25vw;
-	}
-	#emailToCopy{
-		display: none;
-	}
-	#toastCopied{
-		display: none;
-	}
-	#iconoCopiarEmail{
-		display: none !important;
 	}
 }
