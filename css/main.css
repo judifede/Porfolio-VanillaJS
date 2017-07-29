@@ -1,7 +1,7 @@
 #main{
 	text-align: center;
     background-image: url(../img/wallpaper/fondo-azul.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 #portraitPhoto{
 	width: 252px;
