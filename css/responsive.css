@@ -24,10 +24,10 @@
 		font-size: 22pt;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecnologias{
+	/*.imgTecnologias{
 		width: 100px;
 		height: 100px;
-	}
+	}*/
 	#pageSobreMi article div div p{
 		font-size: 14pt;
 		text-align: justify;
@@ -49,11 +49,9 @@
 		width: 60px;
 	}
 	.imgFooter[alt="Telegram"]{
-		width: 48px;
 		margin-right: 1.2vw;
 	}
 	.imgFooter[alt="Gmail"]{
-		height: 48px;
 		margin-right: 1.2vw;
 	}
 	#flechaSubir{
@@ -88,11 +86,11 @@
 		font-size: 22pt;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecnologias{
+	/*.imgTecnologias{
 		width: 95px;
 		height: 95px;
 		margin: 2px;
-	}
+	}*/
 	#pageSobreMi article div div p{
 		font-size: 14pt;
 	}
@@ -113,16 +111,10 @@
 		width: 45px;
 	}
 	.imgFooter[alt="Telegram"]{
-		width: 38px;
 		margin-right: 1.2vw;
 	}
 	.imgFooter[alt="Gmail"]{
-		width: 45px;
-		height: 38px;
 		margin-right: 0.5vw;
-	}
-	.imgFooter[alt="Linkedin"], .imgFooter[alt="Infojobs"]{
-		
 	}
 	#flechaSubir{
 		text-align: right !important;
@@ -162,10 +154,10 @@
 	}
 
 	/*-------------------- About Me --------------------*/
-	.imgTecnologias{
+	/*.imgTecnologias{
 		width: 85px;
 		height: 85px;
-	}
+	}*/
 	#pageSobreMi article div div p{
 		font-size: 12pt;
 		text-align: center;
@@ -186,10 +178,8 @@
 		width: 45px;
 	}
 	.imgFooter[alt="Telegram"]{
-		width: 36px;
 	}
 	.imgFooter[alt="Gmail"]{
-		height: 43px;
 	}
 	#flechaSubir{
 		width: 36px;
@@ -227,10 +217,10 @@
 		margin-top: 20px !important;
 	}
 	/*-------------------- About Me --------------------*/
-	.imgTecnologias{
+	/*.imgTecnologias{
 		width: 55px;
 		height: 55px;
-	}
+	}*/
 	#pageSobreMi article div div p{
 		font-size: 10pt;
 		text-align: justify;
@@ -262,18 +252,15 @@
 	.titulosMV{
 		display: none !important;
 	}
-	.imgFooter[alt="Gmail"]{
-		
-	}
 	
 }
 
 @media screen and (max-width: 500px) {
 	/*-------------------- About Me --------------------*/
-	.imgTecnologias{
+	/*.imgTecnologias{
 		width: 50px;
 		height: 50px;
-	}
+	}*/
 
 	/*-------------------- Footer --------------------*/
 	#container-number-email{
@@ -295,9 +282,7 @@
 		width: 45px;
 	}
 	.imgFooter[alt="Telegram"]{
-		width: 36px;
 	}
 	.imgFooter[alt="Gmail"]{
-		height: 43px;
 	}
 }

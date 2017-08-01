@@ -9,7 +9,7 @@ function checkPage(){
 }
 
 
-function createManagementImages(proyecto){
+function createImages(proyecto){
 
 	//for (var i = num_images; i > 0; i--) {
 	for (var i = 1; i < num_images+1; i++) {
@@ -17,10 +17,10 @@ function createManagementImages(proyecto){
 		section.classList.add('imgGaleria');
 		var img = document.createElement("img");
 
-		if (proyecto=="abaco") {
+		if (proyecto=="proyecto=abaco") {
 			img.style.height = "98%";
 			var imgGaleria_src= "../img/galeria/Abaco/AbacoContacto" + i + ".png";
-		}else if (proyecto=="senderismo") {
+		}else if (proyecto=="proyecto=senderismo") {
 			img.style.height = "93%";
 			var imgGaleria_src= "../img/galeria/SenderismoGC/Senderismo" + i + ".png";
 		}
@@ -40,48 +40,28 @@ function createManagementImages(proyecto){
 	
 }
 
-function managementImages(actualPage){
-	
-	var slider = document.getElementById('slider');
-
-	slider.style.width = (num_images)*100 + "%";
-
-	switch(actualPage){
-
-		case "abaco":
-
-			createManagementImages(actualPage);
-			break;
-		case "senderismo":
-			createManagementImages(actualPage);
-			break;
-		default:
-
-			alert("error");
-	}
-
-
-}
-
 function managementGalery(){
 	var actualPage = checkPage();
+	var obj_nombreProyecto = document.getElementById("nombreProyectoActual");
 
 	switch(actualPage){
 
-		case "abaco":
+		case "proyecto=abaco":
+			obj_nombreProyecto.innerHTML = "Abaco";
 			num_images = 2;
-			managementImages(actualPage);
+			createImages(actualPage);
 			break;
-		case "senderismo":
+		case "proyecto=senderismo":
+			obj_nombreProyecto.innerHTML = "SenderismoGC";
 			num_images = 7;
-			managementImages(actualPage);
+			createImages(actualPage);
 			break;
 		default:
-
-			alert("error");
+			alert("Proyecto no encontrado");
 	}
 
-
+	var slider = document.getElementById('slider');
+	slider.style.width = (num_images)*100 + "%";
 
 }
 

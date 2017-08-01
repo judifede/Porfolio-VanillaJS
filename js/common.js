@@ -1,6 +1,28 @@
 $(document).ready(function(){
 
 });
+/* Flecha Scroll Subir*/
+function estadoScroll(){
+	var currentScroll = window.pageYOffset || document.body.scrollTop;
+	var flecha="";
+	var obj_footer = document.getElementById("footer");
+	var position_footer = findPosition(obj_footer);
+	if(document.getElementById("flechaSubir")!=null){
+	flecha=document.getElementById("flechaSubir");
+		if(currentScroll==0){
+			flecha.style.visibility="hidden";
+		}else if (currentScroll>0){
+			flecha.style.visibility="visible";
+		}
+		if (currentScroll>=2802) {
+			flecha.setAttribute("src", "img/icons/flecha-arriba-white.png");
+		}else{
+			flecha.setAttribute("src", "img/icons/flecha-arriba-black.png");
+		}
+	}
+
+}
+
 /* Main */
 function findPosition(obj) {
     var navPosition = 37;
@@ -21,9 +43,12 @@ function scrollToContent(content){
 	switch(content){ 
 		case "pageSobreMi":
 			window.scroll(0,findPosition(document.getElementById(content)));
+			alert(findPosition(document.getElementById(content)));
 			break;
 		case "pageProyectos":
 			window.scroll(0,findPosition(document.getElementById(content)));
+			alert(findPosition(document.getElementById(content)));
+
 			break;
 		case "proyecto-abaco":
 			window.scroll(0,findPosition(document.getElementById(content)));
@@ -32,7 +57,8 @@ function scrollToContent(content){
 			window.scroll(0,findPosition(document.getElementById(content)));
 			break;
 		case "footer":
-			window.scroll(0,findPosition(document.getElementById(content)));
+			window.scroll(0,findPosition(document.getElementById(content))-700);
+			alert(findPosition(document.getElementById(content))-1000);
 			break;
 		default:
 			window.location.reload(true);
@@ -69,6 +95,10 @@ function styleNavResponsive(){
 styleNavResponsive();
 var screen768 = window.matchMedia("screen and (max-width: 768px)");
 screen768.addListener(styleNavResponsive);
+
+
+
+
 
 /* Footer */
 /*

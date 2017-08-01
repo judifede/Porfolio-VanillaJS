@@ -1,8 +1,14 @@
 footer{
 	overflow: hidden;
-	background-color: rgba(127, 127, 127, 0.5) !important;/* Fondo Gris Oscuro */
+	background-color: rgba(20, 20, 20, 0.6) !important;/* Fondo Gris Oscuro */
 	padding: 15px 0 15px;/*top y bot*/
 	text-align: center;
+}
+.container-footer h1{
+	color: white;
+}
+.container-footer p, .container-footer a, .container-footer h2, .container-footer span{
+	color: rgba(220, 220, 220, 1);
 }
 #container-number-email{
 	width: 40%;
@@ -10,9 +16,6 @@ footer{
 	text-align: center;
 	margin: auto;
 	display: inline-block;
-}
-#container-number{
-	
 }
 #numeroTLF{
 	vertical-align: middle;
