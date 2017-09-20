@@ -1,6 +1,5 @@
 var num_images;
 
-
 function checkPage(){
 	var url = window.location.href;
 	var urlSplitted = url.split('?');
@@ -8,12 +7,10 @@ function checkPage(){
 	return actualPage;
 }
 
-
 function createImages(proyecto){
 
-	//for (var i = num_images; i > 0; i--) {
 	for (var i = 1; i < num_images+1; i++) {
-			var section = document.createElement("section");
+		var section = document.createElement("section");
 		section.classList.add('imgGaleria');
 		var img = document.createElement("img");
 
@@ -43,9 +40,9 @@ function createImages(proyecto){
 function managementGalery(){
 	var actualPage = checkPage();
 	var obj_nombreProyecto = document.getElementById("nombreProyectoActual");
+	var boton_atras = document.getElementById('atras');
 
 	switch(actualPage){
-
 		case "proyecto=abaco":
 			obj_nombreProyecto.innerHTML = "Abaco";
 			num_images = 2;
@@ -58,6 +55,7 @@ function managementGalery(){
 			break;
 		default:
 			alert("Proyecto no encontrado");
+			boton_atras.click();
 	}
 
 	var slider = document.getElementById('slider');

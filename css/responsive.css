@@ -1,5 +1,5 @@
 @media screen and (min-width: 1500px) { /* Escritorio Grande*/
-	.navbar-fixed-top{
+	.navbar-out{
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
@@ -9,6 +9,9 @@
 	}
 	#cajaIconos{
 		display: block;
+	}
+	#cajaIconos div{
+		width: 20%;
 	}
 	#cajaIconos p{
 		font-size: 14pt;
@@ -36,14 +39,8 @@
 
 
 	/*-------------------- Footer --------------------*/
-	#toastCopied{
-		font-size: 12pt;
-	}
 	.container-footer div p{
 		font-size: 16pt;
-	}
-	.titulosMV{
-		display: none !important;
 	}
 	.imgFooter{
 		width: 60px;
@@ -61,7 +58,7 @@
 }
 
 @media screen and (max-width: 1500px) { /* Escritorio */
-	.navbar-fixed-top{
+	.navbar-out{
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
@@ -72,9 +69,12 @@
 	#cajaIconos{
 		display: block;
 	}
+	#cajaIconos div{
+		width: 22%;
+	}
 	#cajaIconos p{
 		font-size: 14pt;
-		margin-top: 2px;
+		margin-top: 5px;
 	}
 	h1.textHeader br{
 		display: none;
@@ -96,16 +96,9 @@
 	}
 
 
-
 	/*-------------------- Footer --------------------*/
-	#toastCopied{
-		font-size: 12pt;
-	}
 	.container-footer div p{
 		font-size: 16pt;
-	}
-	.titulosMV{
-		display: none !important;
 	}
 	.imgFooter{
 		width: 45px;
@@ -124,22 +117,28 @@
 	}
 }
 
-@media screen and (max-width: 1000px) { /* Tablets */
+@media screen and (max-width: 1024px) { /* Tablets */
 	.navbar-fixed-top{
 		display: block;
 	}
-	.input-group p{
+	.input-text-up{
 		display: block;
+	}
+	.navbar-out{
+		display: none;
 	}
 	/*-------------------- Main --------------------*/
 	#portraitPhoto{
 		margin: 25px 0 10px;
 	}
 	#cajaIconos{
-		display: none;
+		display: block;
+	}
+	#cajaIconos div{
+		width: 28%;
 	}
 	#cajaIconos p{
-		font-size: 11pt;
+		font-size: 12pt;
 	}
 	h1.textHeader br{
 		display: none;
@@ -171,19 +170,12 @@
 	.container-footer div p{
 		font-size: 14pt;
 	}
-	.titulosMV{
-		display: inline !important;
-	}
 	.imgFooter{
 		width: 45px;
 	}
-	.imgFooter[alt="Telegram"]{
-	}
-	.imgFooter[alt="Gmail"]{
-	}
 	#flechaSubir{
-		width: 36px;
-		height: 36px;
+		width: 44px;
+		height: 44px;
 	}
 
 }
@@ -192,7 +184,7 @@
 	.navbar-fixed-top{
 		display: block;
 	}
-	.input-group p{
+	.input-text-down{
 		display: none;
 	}
 	/*-------------------- Main --------------------*/
@@ -255,7 +247,7 @@
 	
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {/* Móviles pequeños */
 	/*-------------------- About Me --------------------*/
 	/*.imgTecnologias{
 		width: 50px;
@@ -280,9 +272,5 @@
 	}
 	.imgFooter{
 		width: 45px;
-	}
-	.imgFooter[alt="Telegram"]{
-	}
-	.imgFooter[alt="Gmail"]{
 	}
 }

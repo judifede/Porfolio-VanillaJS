@@ -20,7 +20,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	</head>
 	<body onscroll="estadoScroll()">
-		<nav class="navbar-fixed-top">
+		<nav class="navbar-fixed-top navbar-out">
 			<ul>
 				<li onclick="scrollToContent('pageSobreMi')">
 					<div class="input-group">
@@ -52,8 +52,8 @@
 		<section id="main">
 			<article>
 				<img src="img/judifede.jpg" alt="portraitPhoto" id="portraitPhoto" onclick="styleNavMobile()">
-		        <h1 class="texto textHeader" id="nombre">JUAN DIEGO <br> FERNÁNDEZ DÉNIZ</h1>
-		        <h2 class="texto textHeader" id="titulo">Desarrollador de Software Junior</h2>
+		        <h1 class="textHeader" id="nombre">JUAN DIEGO <br> FERNÁNDEZ DÉNIZ</h1>
+		        <h2 class="textHeader" id="titulo">Desarrollador de Software Junior</h2>
 		        <div id="cajaIconos">
 		            <div id="aboutMe" class="iconos">
 		                <img src="img/icons/aboutMe.png" alt="AboutMe" class="imgScrollTo" 
@@ -149,23 +149,21 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<a href="pages/galeria.html?proyecto=abaco" class="btn-primary type-button">Galería</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/html5.png" alt="Tecnología Abaco 4" class="imgTecnologias">
-						<img src="img/logos-lenguajes/css3.png" alt="Tecnología Abaco 5" class="imgTecnologias">
-						<img src="img/logos-lenguajes/javascript.png" alt="Tecnología Abaco 8" class="imgTecnologias">
-						<img src="img/logos-lenguajes/jquery.gif" alt="Tecnología Abaco 9" class="imgTecnologias">
-						<img src="img/logos-lenguajes/visual-studio.png" alt="Tecnología Abaco 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/git.png" alt="Tecnología Abaco 3" class="imgTecnologias">
-						<img src="img/logos-lenguajes/bitbucket.png" alt="Tecnología Abaco 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/bootstrap.png" alt="Tecnología Abaco 6" class="imgTecnologias">
-						<img src="img/logos-lenguajes/uikit.png" alt="Tecnología Abaco 7" class="imgTecnologias">
+						<img src="img/logos-tecnologias/html5.png" alt="Tecnología Abaco 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/css3.png" alt="Tecnología Abaco 5" class="imgTecnologias">
+						<img src="img/logos-tecnologias/javascript.png" alt="Tecnología Abaco 8" class="imgTecnologias">
+						<img src="img/logos-tecnologias/jquery.gif" alt="Tecnología Abaco 9" class="imgTecnologias">
+						<img src="img/logos-tecnologias/visual-studio.png" alt="Tecnología Abaco 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/git.png" alt="Tecnología Abaco 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/bitbucket.png" alt="Tecnología Abaco 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/bootstrap.png" alt="Tecnología Abaco 6" class="imgTecnologias">
+						<img src="img/logos-tecnologias/uikit.png" alt="Tecnología Abaco 7" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
-							Tal y como dije anteriormente en 
-							<a onclick="scrollToContent('container-exp-fct')" id="irContainer-Exp-FCT">
-								Experiencia
-							</a> me dediqué al front end de la nueva página web de la empresa, aunque por decisiones del jefe finalmente no se publicó y solo puedo enseñar imágenes de la versión que yo tenía.<br>
-							A partir de dicha plantilla, puse los colores de la empresa, el logo, ordené el contenido, relacioné la página con Facebook, corregí detalles en los diferentes navegadores y finalmente, el apartado de <strong>Contacto</strong>, que podemos ver en <strong>"Galería"</strong>, lo hice por iniciativa propia con la aceptación posterior del jefe y en dicha galería, solo veremos este apartado, al ser lo más relevante del proyecto porque no se pudo acabar por causas ajenas a nuestra voluntad.<br>
+							Tal y como dije anteriormente en <strong>Experiencia</strong>
+							me dediqué al front end de la nueva página web de la empresa, aunque por decisiones del jefe finalmente no se publicó y solo puedo enseñar imágenes de la versión que yo tenía.<br>
+							A partir de dicha plantilla, puse los colores de la empresa, el logo, ordené el contenido, relacioné la página con Facebook, corregí detalles en los diferentes navegadores y finalmente, el apartado de <strong>Contacto</strong>, que podemos ver en <strong>Galería</strong>, lo hice por iniciativa propia con la aceptación posterior del jefe y en dicha galería, solo veremos este apartado, al ser lo más relevante del proyecto porque no se pudo acabar por causas ajenas a nuestra voluntad.<br>
 
 							Usé Bootstrap y JQuery Validate para el formulario derecho.
 						</p>
@@ -176,18 +174,18 @@
 				<div class="container container-proyecto" id="proyecto-diw">
 					<h2 class="textHeader">Rediseño IES El Rincón</h2>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="MockupDIW" class="btn-primary type-button">Ver proyecto</a>
+						<a href="MockupDIW" class="btn-primary type-button" target="_blank">Ver proyecto</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/html5.png" alt="Tecnología El Rincón 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/css3.png" alt="Tecnología El Rincón 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/javascript.png" alt="Tecnología El Rincón 3" class="imgTecnologias">
-						<img src="img/logos-lenguajes/git.png" alt="Tecnología El Rincón 4" class="imgTecnologias">
-						<img src="img/logos-lenguajes/github.png" alt="Tecnología El Rincón 5" class="imgTecnologias">
+						<img src="img/logos-tecnologias/html5.png" alt="Tecnología El Rincón 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/css3.png" alt="Tecnología El Rincón 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/javascript.png" alt="Tecnología El Rincón 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/git.png" alt="Tecnología El Rincón 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/github.png" alt="Tecnología El Rincón 5" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
-							Durante el 2º curso de <strong>DAW</strong>(Desarrollo de Aplicaciones Web) en el módulo de Diseño de Interfaces Web, en un grupo de 4 personas rediseñamos la página de nuestro instituto(IES El Rincón) hasta llegar a un <strong>Mockup(maqueta de la página)</strong>.<br>
-							Repartimos el trabajo, desde casa lo unimos con Git y como íbamos bien de tiempo hicimos Pair Programming (una persona escribe código y el resto analiza, opina y revisa) para aprovechar las horas que nos quedaban en clase hasta el día de la presentación. Finalmente, como ampliación hicimos el mapa del sitio(footer), "las migas de pan" y la galería funcional(nuestro centro -> galería).
+							Durante el 2º curso de <strong>DAW</strong> (Desarrollo de Aplicaciones Web) en el módulo de Diseño de Interfaces Web, en un grupo de 4 personas rediseñamos la página de nuestro instituto (IES El Rincón) hasta llegar a un <strong>Mockup (maqueta de la página)</strong>.<br>
+							Repartimos el trabajo, desde casa lo unimos con Git y como íbamos bien de tiempo hicimos Pair Programming (una persona escribe código y el resto analiza, opina y revisa) para aprovechar las horas que nos quedaban en clase hasta el día de la presentación. Finalmente, como ampliación hicimos el mapa del sitio (footer), "las migas de pan" y la galería funcional (nuestro centro -> galería).
 						</p>
 						<span><strong>Fecha:</strong> Febrero de 2016</span>
 					</div>
@@ -198,16 +196,16 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<a href="pages/galeria.html?proyecto=senderismo" class="btn-primary type-button">Galería</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/html5.png" alt="Tecnología Senderismo 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/css3.png" alt="Tecnología Senderismo 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/javascript.png" alt="Tecnología Senderismo 3" class="imgTecnologias">
-						<img src="img/logos-lenguajes/php.png" alt="Tecnología Senderismo 4" class="imgTecnologias">
-						<img src="img/logos-lenguajes/laravel.png" alt="Tecnología Senderismo 5" class="imgTecnologias">
+						<img src="img/logos-tecnologias/html5.png" alt="Tecnología Senderismo 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/css3.png" alt="Tecnología Senderismo 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/javascript.png" alt="Tecnología Senderismo 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/php.png" alt="Tecnología Senderismo 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/laravel.png" alt="Tecnología Senderismo 5" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
-							Antes de empezar la FCT en el 2º curso de <strong>DAW</strong>(Desarrollo de Aplicaciones Web) en el <strong>módulo de Integración (dos semanas)</strong> una compañera y yo desarrollamos una página para el senderismo en Gran Canaria con el asesoramiento de una estudiante de Turismo que ejercía de nuestra clienta. Por otro módulo del ciclo ya habíamos investigado sobre Laravel y quisimos sacarle el mayor provecho a dicha tecnología.<br>
-							Al estar limitados por el tiempo algunas partes se quedaron como Mockup(maqueta de la página) aunque la clienta quedó satisfecha. Intentamos buscar algún hosting que fuese gratuito pero no encontramos ninguno que fuese compatible con Laravel, de ahí el uso de la <strong>"Galería"</strong>.
+							Antes de empezar la FCT en el 2º curso de <strong>DAW</strong> (Desarrollo de Aplicaciones Web) en el <strong>módulo de Integración (dos semanas)</strong> una compañera y yo desarrollamos una página para el senderismo en Gran Canaria con el asesoramiento de una estudiante de Turismo que ejercía de nuestra clienta. Por otro módulo del ciclo ya habíamos investigado sobre Laravel y quisimos sacarle el mayor provecho a dicha tecnología.<br>
+							Al estar limitados por el tiempo algunas partes se quedaron como Mockup (maqueta de la página) aunque la clienta quedó satisfecha. Intentamos buscar algún hosting que fuese gratuito pero no encontramos ninguno que fuese compatible con Laravel, de ahí el uso de la <strong>"Galería"</strong>.
 						</p>
 						<span><strong>Fecha:</strong> Marzo de 2016</span>
 					</div>
@@ -216,16 +214,18 @@
 				<div class="container container-proyecto" id="proyecto-hibernate">
 					<h2 class="textHeader">CRUD Hibernate</h2>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galeria.html?proyecto=hibernate" class="btn-primary type-button">Galería</a>
+						<!--<a href="pages/galeria.html?proyecto=hibernate" class="btn-primary type-button">Galería</a>-->
+						<a  class="btn-disabled type-button">Galería en producción</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/java.png" alt="Tecnología Hibernate 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/MySQL.png" alt="Tecnología Hibernate 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/git.png" alt="Tecnología Hibernate 3" class="imgTecnologias">
-						<img src="img/logos-lenguajes/github.png" alt="Tecnología Hibernate 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/java.png" alt="Tecnología Hibernate 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/hibernate.png" alt="Tecnología Hibernate 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/MySQL.png" alt="Tecnología Hibernate 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/git.png" alt="Tecnología Hibernate 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/github.png" alt="Tecnología Hibernate 5" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
-							Durante el 2º curso de <strong>DAW</strong>(Desarrollo de Aplicaciones Multiplataformas) en el módulo de Desarrollo de Interfaces, le presenté al profesor un CRUD en Eclipse con Hibernate, patrón MVC y código limpio.
+							Durante el 2º curso de <strong>DAW</strong> (Desarrollo de Aplicaciones Multiplataformas) en el módulo de Desarrollo de Interfaces, le presenté al profesor un CRUD en Eclipse con Hibernate, patrón MVC y código limpio.
 
 							ENLACE A GITHUB
 						</p>
@@ -236,12 +236,14 @@
 				<div class="container container-proyecto" id="proyecto-trabajosjs">
 					<h2 class="textHeader">Trabajos JS</h2>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/trabajosJS/piedra_papel_y_tijera.html" class="btn-primary type-button">Piedra, papel y tijera</a>
-						<a href="pages/trabajosJS/moneda.html" class="btn-primary type-button">Moneda</a>
+						<!--<a href="pages/trabajosJS/piedra_papel_y_tijera.html" class="btn-primary type-button">Piedra, papel y tijera</a>-->
+						<!--<a href="pages/trabajosJS/moneda.html" class="btn-primary type-button">Moneda</a>-->
+						<a class="btn-disabled type-button">Piedra, papel y tijera en producción</a>
+						<a class="btn-disabled type-button">Moneda en producción</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/html5.png" alt="Tecnología Trabajos JS 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/css3.png" alt="Tecnología Trabajos JS 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/javascript.png" alt="Tecnología Trabajos JS 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/html5.png" alt="Tecnología Trabajos JS 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/css3.png" alt="Tecnología Trabajos JS 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/javascript.png" alt="Tecnología Trabajos JS 3" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
@@ -256,12 +258,13 @@
 				<div class="container container-proyecto" id="proyecto-serietoday">
 					<h2 class="textHeader">Serie Today</h2>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galeria.html?proyecto=serie" class="btn-primary type-button">Galería</a>
+					<!--href="pages/galeria.html?proyecto=serie"-->
+						<a  class="btn-disabled type-button">Galería en producción</a>
 						<h3 class="textHeader">Tecnologías utilizadas</h3>
-						<img src="img/logos-lenguajes/android-studio.png" alt="Tecnología Serie Today 1" class="imgTecnologias">
-						<img src="img/logos-lenguajes/SQLite.png" alt="Tecnología Serie Today 2" class="imgTecnologias">
-						<img src="img/logos-lenguajes/git.png" alt="Tecnología Serie Today 3" class="imgTecnologias">
-						<img src="img/logos-lenguajes/bitbucket.png" alt="Tecnología Serie Today 4" class="imgTecnologias">
+						<img src="img/logos-tecnologias/android-studio.png" alt="Tecnología Serie Today 1" class="imgTecnologias">
+						<img src="img/logos-tecnologias/SQLite.png" alt="Tecnología Serie Today 2" class="imgTecnologias">
+						<img src="img/logos-tecnologias/git.png" alt="Tecnología Serie Today 3" class="imgTecnologias">
+						<img src="img/logos-tecnologias/bitbucket.png" alt="Tecnología Serie Today 4" class="imgTecnologias">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p>
@@ -314,5 +317,6 @@
         <img src="img/icons/flecha-arriba-black.png" alt="flechaSubir" id="flechaSubir"
 				onclick="window.scrollTo(0, 0)" id="flechaSubir" />
         <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
 	</body>
 </html>

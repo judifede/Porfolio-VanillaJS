@@ -4,7 +4,7 @@ var slider = $('#slider');
 var siguiente = $('#btn-next');
 var anterior = $('#btn-prev');
 var interval;
-// Quiero que la ultima imagen se inserte antes de la primera imagen 
+// Quiero que la última imagen se inserte antes de la primera imagen 
 $('#slider section:last').insertBefore('#slider section:first');
 
 // Mostrar la primera imagen con un margen de -100%
