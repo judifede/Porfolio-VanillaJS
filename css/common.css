@@ -24,6 +24,7 @@ section{
 	display: inline-block;
 	border-radius: 50%;
 	cursor: pointer;
+	visibility: hidden;
 }
 #flechaSubir:hover{
 	transform: scale(1.1,1.1);

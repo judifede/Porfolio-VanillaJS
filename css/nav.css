@@ -25,5 +25,9 @@ ul li p{
 	color: #eee;
 	display: inline-block;
 }
-.navbar-addon.bg-black{ background: #000 !important;}/* Fondo Negro */
-.navbar-icons.c-white { color: #eee !important; }/* Color Blanco */
+/* Fondo Móvil Negro */
+.navbar-addon.bg-black{ background: #000 !important;}
+/* Icons fa */
+ul li .fa{
+	color: white;
+}
