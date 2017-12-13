@@ -1,35 +1,27 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Galería</title>
+		<meta name="author" content="Judifede"/>
 		<meta charset="UTF-8"/>
-		<link rel="stylesheet" href="galery.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script type="text/javascript" language="javascript" src="galery.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/icons/favicon.png" />		
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/bxslider/jquery.bxslider.css">
+		<link rel="stylesheet" type="text/css" href="../css/galery.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../js/bxslider/jquery.bxslider.js"></script>
+	    <script src="../js/galery.js"></script>		
 	</head>
-	
 	<body>
-		<h1>Galería (en producción) <span id="nombreProyectoActual"></span></h1>
-		<div class="slider">
-			<div class="slides">
-				<article class="slide" data-slide-num="1">
-					<img src="img1.jpg">
-					
-				</article>
-				<!--<article class="slide" data-slide-num="2">
-					<img src="img2.jpg">
-					
-				</article>-->
+		<a href="../index.html" id="link_atras">
+			<img src="../img/trabajosJS/Arrow.png" alt="atras" id="atras"/>
+		</a>
+		<h1>Galería <span id="project_name"></span></h1>
+	    <section>
+			<div class="slider">
 				
 			</div>
-			<div class="slider-controls">
-				<span class="prev"><img src="chevron-thin-left.svg"></span>
-				<span class="next"><img src="chevron-thin-right.svg"></span>
-			</div>
-			<div class="slider-selectors">
-				<span class="selector current-slide" data-slide="1"></span>
-				<span class="selector" data-slide="2"></span>
-				
-			</div>
-		</div>
+	    </section>
+	    
 	</body>
 </html>

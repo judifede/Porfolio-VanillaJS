@@ -5,17 +5,28 @@ body{
 	padding: 0;
 	margin: 0;
 	flex-direction: column;
+	min-width: 320px;
 }
+
 section{
 	min-height: 100vh;
-	padding-top: 37px;
+	padding: 15px;
 	flex: 1;
 }
-.textHeader{
+
+.text_header{
 	letter-spacing: 1px;
 	font-family: 'Exo 2', sans-serif !important;
 }
-#flechaSubir{
+
+h1.text_header{
+	font-size: 28pt;
+}
+h2.text_header{
+	font-size: 22pt;
+}
+
+#home_arrow{
 	width: 50px;
 	height: 50px;
 	position: fixed;
@@ -26,6 +37,7 @@ section{
 	cursor: pointer;
 	visibility: hidden;
 }
-#flechaSubir:hover{
+
+#home_arrow:hover{
 	transform: scale(1.1,1.1);
 }

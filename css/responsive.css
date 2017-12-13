@@ -1,115 +1,57 @@
-@media screen and (min-width: 1500px) { /* Escritorio Grande*/
-	.navbar-out{
+
+@media (min-width: 1500px) { /* 4K*/
+	.navbar_out{
 		display: none;
 	}
-	/*-------------------- Main --------------------*/
-	.imgScrollTo{
+	/*-------------------- Home --------------------*/
+	.img_scroll_to{
 		width: 115px;
 		height: 115px;
 	}
-	#cajaIconos{
+	#home #caja_iconos{
 		display: block;
 	}
-	#cajaIconos div{
-		width: 20%;
-	}
-	#cajaIconos p{
-		font-size: 14pt;
-		margin-top: 2px;
-	}
-	h1.textHeader br{
-		display: none;
-	}
-	h1.textHeader{
-		font-size: 28pt;
-	}
-	h2.textHeader{
-		font-size: 22pt;
-	}
-	/*-------------------- About Me --------------------*/
-	/*.imgTecnologias{
-		width: 100px;
-		height: 100px;
-	}*/
-	#pageSobreMi article div div p{
-		font-size: 14pt;
-		text-align: justify;
-	}
-
-
-
-	/*-------------------- Footer --------------------*/
-	.container-footer div p{
-		font-size: 16pt;
-	}
-	.imgFooter{
-		width: 60px;
-	}
-	.imgFooter[alt="Telegram"]{
-		margin-right: 1.2vw;
-	}
-	.imgFooter[alt="Gmail"]{
-		margin-right: 1.2vw;
-	}
-	#flechaSubir{
-		width: 50px;
-		height: 50px;
-	}
-}
-
-@media screen and (max-width: 1500px) { /* Escritorio */
-	.navbar-out{
-		display: none;
-	}
-	/*-------------------- Main --------------------*/
-	.imgScrollTo{
-		width: 115px;
-		height: 115px;
-	}
-	#cajaIconos{
-		display: block;
-	}
-	#cajaIconos div{
+	#home #caja_iconos div{
 		width: 22%;
 	}
-	#cajaIconos p{
+	#home #caja_iconos p{
 		font-size: 14pt;
 		margin-top: 5px;
 	}
-	h1.textHeader br{
+	h1.text_header br{
 		display: none;
 	}
-	h1.textHeader{
+	h1.text_header{
 		font-size: 28pt;
 	}
-	h2.textHeader{
+	h2.text_header{
 		font-size: 22pt;
 	}
 	/*-------------------- About Me --------------------*/
-	/*.imgTecnologias{
+	.img_tecnologias{
 		width: 95px;
 		height: 95px;
 		margin: 2px;
-	}*/
-	#pageSobreMi article div div p{
+	}
+	#page_sobre_mi article div div p{
 		font-size: 14pt;
 	}
 
 
 	/*-------------------- Footer --------------------*/
-	.container-footer div p{
+	.container_footer div p{
 		font-size: 16pt;
 	}
-	.imgFooter{
+	.img_footer{
 		width: 45px;
 	}
-	.imgFooter[alt="Telegram"]{
+	.img_footer[alt="Telegram"]{
 		margin-right: 1.2vw;
 	}
-	.imgFooter[alt="Gmail"]{
+	.img_footer[alt="Gmail"]{
 		margin-right: 0.5vw;
 	}
-	#flechaSubir{
+	#flecha_subir{
 		text-align: right !important;
 		float: right;
 		width: 50px;
@@ -117,37 +59,40 @@
 	}
 }
 
-@media screen and (max-width: 1024px) { /* Tablets */
-	.navbar-fixed-top{
+
+
+/* Tablet */
+@media (max-width: 1024px) { 
+	.navbar_fixed_top{
 		display: block;
 	}
-	.input-text-up{
+	.input_text_up{
 		display: block;
 	}
-	.navbar-out{
+	.navbar_out{
 		display: none;
 	}
-	/*-------------------- Main --------------------*/
-	#portraitPhoto{
+	/*-------------------- Home --------------------*/
+	#portrait_photo{
 		margin: 25px 0 10px;
 	}
-	#cajaIconos{
+	#home #caja_iconos{
 		display: block;
 	}
-	#cajaIconos div{
+	#home #caja_iconos div{
 		width: 28%;
 	}
-	#cajaIconos p{
+	#home #caja_iconos p{
 		font-size: 12pt;
 	}
-	h1.textHeader br{
+	h1.text_header br{
 		display: none;
 	}
-	h1.textHeader{
+	h1.text_header{
 		font-size: 25pt;
 		margin-top: 20px !important;
 	}
-	h2.textHeader{
+	h2.text_header{
 		font-size: 19pt;
 		margin-top: 20px !important;
 	}
@@ -157,120 +102,63 @@
 		width: 85px;
 		height: 85px;
 	}*/
-	#pageSobreMi article div div p{
+	#page_sobre_mi article div div p{
 		font-size: 12pt;
 		text-align: center;
 	}
 
 
 	/*-------------------- Footer --------------------*/
-	.container-footer div{
+	.container_footer div{
 		text-align: center;
 	}
-	.container-footer div p{
+	.container_footer div p{
 		font-size: 14pt;
 	}
-	.imgFooter{
+	.img_footer{
 		width: 45px;
 	}
-	#flechaSubir{
+	#flecha_subir{
 		width: 44px;
 		height: 44px;
 	}
 
 }
 
-@media screen and (max-width: 768px) { /* Móviles */
-	.navbar-fixed-top{
-		display: block;
-	}
-	.input-text-down{
+
+
+/* Movil */
+@media (max-width: 425px) {
+
+
+	/*-------------------- Home --------------------*/
+	
+
+	#home #caja_iconos{
 		display: none;
-	}
-	/*-------------------- Main --------------------*/
-	#portraitPhoto{
-		margin: 25px 0 10px;
-	}
-	#cajaIconos{
-		display: none;
-	}
-	#cajaIconos p{
-		font-size: 8pt;
-	}
-	h1.textHeader br{
-		display: block;
-	}
-	h1.textHeader{
-		font-size: 22pt;
-		margin-top: 20px !important;
-	}
-	h2.textHeader{
-		font-size: 16pt;
-		margin-top: 20px !important;
-	}
-	/*-------------------- About Me --------------------*/
-	/*.imgTecnologias{
-		width: 55px;
-		height: 55px;
-	}*/
-	#pageSobreMi article div div p{
-		font-size: 10pt;
-		text-align: justify;
 	}
 
-	/*-------------------- Footer --------------------*/
-	.container-footer div{
-		padding: 0;
-	}
-	.container-footer div p{
-		font-size: 13pt;
-	}
-	#container-number-email{
-		width: 100%;
-	}
-	#container-socialMedia{
-		width: 100%;
-	}
-	#container-socialMedia h2{
-		margin-top: 10px;
-		font-size: 20pt;
-	}
-	#container-legalidad{
-		width: 50%;
-	}
-	#container-legalidad span{
-		display: block;
-	}
-	.titulosMV{
-		display: none !important;
+	#home #flecha_scroll{
+		left: 5px;
 	}
 	
-}
-
-@media screen and (max-width: 500px) {/* Móviles pequeños */
-	/*-------------------- About Me --------------------*/
-	/*.imgTecnologias{
-		width: 50px;
-		height: 50px;
-	}*/
-
 	/*-------------------- Footer --------------------*/
-	#container-number-email{
+	#container_number_email{
 		width: 100%;
 	}
-	#container-socialMedia{
+	#container_socialMedia{
 		width: 100%;
 	}
-	#container-socialMedia h2{
+	#container_socialMedia h2{
 		font-size: 18pt;
 	}
-	#container-legalidad{
+	#container_legalidad{
 		width: 60%;
 	}
-	#container-legalidad span{
+	#container_legalidad span{
 		display: block;
 	}
-	.imgFooter{
+	.img_footer{
 		width: 45px;
 	}
 }

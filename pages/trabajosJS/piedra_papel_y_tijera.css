@@ -1,144 +1,277 @@
 body{
 	text-align: center;
 	margin: auto;
-	padding: 2%;
+	padding: 25px;
 	background-image: url(../../img/wallpaper/fondoPapel.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	font-size: 25px;
 }
+
+#atras{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	height: 80px;
+}
+
 h2{
 	display: inline;
 	margin: auto auto 4% auto;
+	font-size: 35px;
 	font-family: GirlsHaveManySecrets;
 }
-#container-main{
-	margin: auto;
-	text-align: center;
+
+#container_VS{
+	display: inline-block;
 }
-#registro{ /*-------------------------------MIRAR */
+
+#registro{ 
 	height: 2%;
-    width: 80%;
+    width: 100%;
 	margin: 2% auto;
-	text-align: center;
-	position: static;
-	top: 10%;
-    right: 50%;
+	position: relative;
 }
+
 #registro p{
 	margin: auto 5% auto 5%;
 	display: inline;
-	text-align: center;
 	font-family: cinnamoncake;
 	font-weight: bold;
 }
-fieldset{
-	font-family: cinnamoncake;
-	font-weight: bold;
-	display: inline;
-	border-color: black;
-}
-#Rival{
-	margin: 1% auto auto 8%;
-}
-#VS{
-	display: inline;
-	position: relative;
-	top: -120px;
-	font-family: PressStart2P;
-	margin: auto 0.7% auto 1%;
-}
-#atras{
-	width: 80px;
-	height: 80px;
-	text-align: left;
-	margin: auto 20px;
-}
-#Opciones{
-	text-align: center;
-	display: inline;
-	width: 300px;
-	margin: auto;
-}
-.Opcion{
-	display: inline;
-}
+
 #Resultado{
 	font-family: GirlsHaveManySecrets;
 	font-weight: bold;
-	margin: 3% 1% 2% auto;
-	display: inline;
+	font-size: 35px;
 }
+
+fieldset{
+	font-family: cinnamoncake;
+	font-weight: bold;
+	display: inline-block;
+	border-color: black;
+	height: 140px;
+}
+
+#fieldset_CPU{
+	width: 200px;
+	height: 200px;
+}
+
+#CPU{
+	width: 180px;
+	height: 180px;
+}
+
+#VS{
+	display: inline-block;
+	position: relative;
+	font-family: PressStart2P;
+	margin: auto 1% auto 1%;
+	font-size: 30px;
+	transform: translateY(-240%);
+}
+
+#fieldset_user{
+	width: 200px;
+	height: 200px;
+}
+
+#User{
+	width: 180px;
+	height: 180px;
+}
+
+#Opciones{
+	display: inline-block;
+	width: 300px;
+	margin-top: 15px;
+	padding-bottom: 0;
+}
+
+.Opcion{
+	display: inline-block;
+}
+
+input[type='radio']:after {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: transparent;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid black;
+}
+
+input[type='radio']:checked:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #337ab7;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid black;
+}
+
 #botonJ{
-	margin: 8% auto auto auto;
 	width: 70px;
 	height: 25px;
+	margin-top: 15px;
+	background-color: #337ab7;
+	color: white;	
 }
+
 /*------------------------------------ RESPONSIVE ------------------------------------*/
 
-@media screen and (min-width: 1500px) { /* Escritorio Grande*/
+@media (min-width: 2000px){
 	
-}
-
-@media screen and (max-width: 1500px) { /* Escritorio */
-	h2{
-		font-size: 45pt;
-	}
-	#registro p{
-		font-size: 16pt;
-	}
-	fieldset{
-		font-size: 14pt;
-	}
-	#VS{
-		font-size: 30pt;
-	}
-	#CPU{
-		height: 200px;
-		width: 160px;	
-	}
-	#User{
-		height: 200px;
-		width: 160px;	
-	}
-	#Resultado{
-		font-size: 32pt;
-	}
-	
-}
-
-@media screen and (max-width: 1000px) { /* Tablets */
-	h2{
-		font-size: 37pt;
-	}
-	#registro p{
-		font-size: 14pt;
-	}
-	fieldset{
-		font-size: 12pt;
-	}
-	#VS{
-		font-size: 26pt;
-	}
-	#CPU{
+	#atras{
+		width: 160px;
 		height: 160px;
-		width: 120px;	
 	}
-	#User{
-		height: 160px;
-		width: 120px;	
+	
+	h2{
+		font-size: 65px;
 	}
+	
+	#registro p{
+		font-size: 55px;
+	}
+	
 	#Resultado{
-		font-size: 32pt;
+		font-size: 55px;
 	}
+
+	#fieldset_CPU{
+		width: 400px;
+		height: 400px;
+	}
+	
+	#CPU{
+		width: 390px;
+		height: 390px;
+	}
+	
+	#VS{
+		display: inline-block;
+		position: relative;
+		font-family: PressStart2P;
+		margin: auto 1% auto 1%;
+		font-size: 60px;
+		transform: translateY(-300%);
+	}
+	
+	#fieldset_user{
+		width: 400px;
+		height: 400px;
+	}
+	
+	#User{
+		width: 390px;
+		height: 390px;
+	}
+
+	#Opciones{
+		width: 700px;
+		font-size: 40px;
+	}
+
+	input{
+		margin-right: 20px;
+	}
+
+	input[type='radio']:after {
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		top: -20px;
+		left: -10px;
+	}
+	
+	input[type='radio']:checked:after {
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		top: -20px;
+		left: -10px;
+	}
+	#botonJ{
+		font-size: 35px;
+		width: 140px;
+		height: 75px;		
+	}
+	
+
+
 }
 
-@media screen and (max-width: 768px) { /* Móviles */
-	
-	
-}
+@media (max-width: 425px){
 
-@media screen and (max-width: 500px) {
+	body{
+		font-size: 20px
+	}
+
+	#atras{
+		width: 40px;
+		height: 40px;
+	}
+
+	h2{
+		font-size: 25px;
+	}
+
+	#registro p{
+		display: block;
+		margin-bottom: 10px;
+	}
 	
+	#Resultado{
+		margin: 10px;
+	}
+	
+	#fieldset_CPU{
+		width: 100px;
+		height: 100px;
+	}
+	
+	#CPU{
+		width: 90px;
+		height: 90px;
+	}
+	
+	#VS{
+		display: inline-block;
+		position: relative;
+		font-family: PressStart2P;
+		margin: auto 1% auto 1%;
+		font-size: 30px;
+		transform: translateY(-100%);
+	}
+	
+	#fieldset_user{
+		width: 100px;
+		height: 100px;
+	}
+	
+	#User{
+		width: 90px;
+		height: 90px;
+	}
+
+	
+
+
 }
 
 
