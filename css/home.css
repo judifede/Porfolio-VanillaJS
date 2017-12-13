@@ -1,0 +1,78 @@
+#home{
+	text-align: center;
+    background-image: url(../img/wallpaper/fondo-azul.jpg);
+    background-size: cover;
+}
+
+#home #portrait_photo{
+	display: inline-block;
+	width: 252px;
+	height: 252px;
+	padding: 0;
+	margin-top: 40px;
+	border: 2px solid darkgrey;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 1.5s ease-in-out;
+	transform: scale(0);
+}
+
+#home #portrait_photo.loaded{
+	opacity: 1;
+	transform: scale(1);
+}
+
+#home .text_header{
+	color: white;
+	margin: 30px 0 2% 0;
+	transform: translateY(80px);
+	opacity: 0;
+	transition: all 1s ease-in-out;	
+	text-shadow: 1.5px 1.5px 0px black, -1.5px -1.5px 0px black, 
+				 1.5px 0px 0px black, -1.5px 0px 0px black,
+				 0px 1.5px 0px black, 0px -1.5px 0px black,
+				 1.5px -1.5px 0px black, -1.5px 1.5px 0px black;
+}
+
+#home .text_header.loaded{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+#home h1.text_header br{
+	display: none;
+}
+
+#home article{
+	position: relative;
+}
+
+#home #scroll_arrow{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 10px;
+	left: 35px;
+	opacity: 0.9;
+	visibility: hidden;
+	animation-name: scroll_arrow;
+	animation-duration: 1.5s;
+	animation-delay: 1.5s;
+	animation-iteration-count: 3;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+}
+
+@keyframes scroll_arrow{
+	0%{
+		visibility: visible;		
+		top: 10px;
+	}
+	50%{
+		top: 100px;
+	}
+	100%{
+		top: 10px;
+	}
+}

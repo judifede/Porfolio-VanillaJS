@@ -4,13 +4,13 @@ footer{
 	padding: 15px 0 15px;/*top y bot*/
 	text-align: center;
 }
-.container-footer h1{
+.container_footer h1{
 	color: white;
 }
-.container-footer p, .container-footer a, .container-footer h2, .container-footer span{
+.container_footer p, .container_footer a, .container_footer h2, .container_footer span{
 	color: rgba(220, 220, 220, 1);
 }
-#container-number-email{
+#container_number_email{
 	width: 40%;
 	height: 100px;
 	text-align: center;
@@ -20,41 +20,51 @@ footer{
 #numeroTLF{
 	vertical-align: middle;
 }
-#container-email{
+#container_email{
 	margin-top: 10px;
 }
-#container-socialMedia{
+#container_socialMedia{
 	width: 40%;
 	height: 100px;
 	margin: auto;
 	display: inline-block;
 }
-#container-socialMedia h2{
+#container_socialMedia h2{
 	margin-top: 0px;
 	font-size: 22pt;
 }
-#container-legalidad{
+#container_legalidad{
 	width: 30%;
 	margin: auto;
 	margin-top: 15px;
 }
-#container-legalidad span{
+#container_legalidad span{
 	display: inline;
 	border: 1px dotted rgba(1,1,1,0.8);
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
 }
-#container-socialMedia-images{
+#container_socialMedia_images{
 	margin-top: 20px
 }
-.container-footer div p{
+.container_footer div p{
 	font-size: 16pt;
 	display: inline;
 }
-#emailToCopy{
-	color: black;
+.img_footer{
+	width: 60px;
 }
-.imgFooter:hover, .imgScrollTo-Footer:hover{
+.img_footer[alt="Telegram"]{
+	margin-right: 1.2vw;
+}
+.img_footer[alt="Gmail"]{
+	margin-right: 1.2vw;
+}
+.img_footer:hover, .img_scrollTo_footer:hover{
 	transform: scale(1.1,1.1);
+}
+#flecha_subir{
+	width: 50px;
+	height: 50px;
 }

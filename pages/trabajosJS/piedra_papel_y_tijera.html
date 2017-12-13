@@ -19,23 +19,25 @@
 			<p id="E">Empatadas:   </p>
 			<p id="P">Perdidas:   </p>
 		</div>
-		<div id="container-main">	
-			<fieldset id="Rival">
+		<p id="Resultado">¡HAS PERDIDO!</p>
+		<div id="container_main">	
+			<fieldset id="fieldset_CPU">
 				<legend>Rival</legend>
 				<img src="../../img/trabajosJS/dr_kawashima.png" id="CPU"/>
 			</fieldset>
+
 			<p id="VS">VS</p>
-			<fieldset id="Tu">
+				
+			<fieldset id="fieldset_user">
 				<legend>Tú</legend>
 				<img src="../../img/trabajosJS/boochan.png" id="User"/>
 			</fieldset>
 		</div>
-		<p id="Resultado">¡HAS PERDIDO!</p>
 		<fieldset id="Opciones">
 			<legend>Tu jugada</legend>
-			<div class="Opcion"><input type="radio" name="juego" id="Piedra">Piedra</input></div>
-			<div class="Opcion"><input type="radio" name="juego" id="Papel">Papel</input></div>
-			<div class="Opcion"><input type="radio" name="juego" id="Tijeras">Tijeras</input></div>
+			<input type="radio" name="juego" id="Piedra" class="Opcion">Piedra</input>
+			<input type="radio" name="juego" id="Papel" class="Opcion">Papel</input>
+			<input type="radio" name="juego" id="Tijeras" class="Opcion">Tijeras</input>
 			<button type="button" onclick="jugar()" id="botonJ" >JUGAR</button>
 		</fieldset>
 		<script language="JavaScript" type="text/javaScript" src="piedra_papel_y_tijera.js"></script>

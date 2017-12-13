@@ -9,7 +9,7 @@
 					bucle=setInterval(cambioMoneda, 300);
 					boton.disabled=true;
 					document.getElementById("movimiento").style.WebkitAnimationPlayState = "running";
-					document.body.style.backgroundImage = "url(../../img/trabajosJS/pulgar.jpg)";
+					document.getElementById("mano").src="../../img/trabajosJS/pulgar.png";
 				}
 				function cambioMoneda() {
 					cuenta=cuenta % 2;
@@ -46,7 +46,8 @@
 						else document.getElementById("cruz").innerHTML = "Ha salido cruz " + cruz + " veces.";
 					}
 					document.getElementById("movimiento").style.WebkitAnimationPlayState = "paused";
-					document.body.style.backgroundImage = "url(../../img/trabajosJS/puño.jpg)";
+					document.getElementById("mano").src="../../img/trabajosJS/puño.png";
+					
 					document.getElementById("results").style.visibility="visible";
 				}
 			
