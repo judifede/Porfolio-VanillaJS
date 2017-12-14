@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     var num_images;
-    var img_galery_src
+    var img_galery_src;
     
     function checkPage(){
         var url = window.location.href;
@@ -56,27 +56,30 @@ $(document).ready(function(){
     function managementGalery(){
         var actualPage = checkPage();
         var obj_nombre_proyecto = document.getElementById('project_name');
-        var boton_back = document.getElementById('back');
+        var link_back = document.getElementById('link_back');
         
         switch(actualPage){
             case "project=abaco":
                 obj_nombre_proyecto.innerHTML = "Abaco";
+                link_back.href = "../index.html#project_abaco";
                 num_images = 2;
                 createImages(actualPage);
                 break;
             case "project=senderismo":
                 obj_nombre_proyecto.innerHTML = "SenderismoGC";
+                link_back.href = "../index.html#project_senderismo";
                 num_images = 7;
                 createImages(actualPage);
                 break;
             case "project=cm3ramblas":
                 obj_nombre_proyecto.innerHTML = "Centro Médico Tres Ramblas";
+                link_back.href = "../index.html#project_cm3ramblas";
                 num_images = 4;
                 createImages(actualPage);
                 break;
             default:
 			    alert("Proyecto no encontrado");
-                boton_back.click();
+                link_back.click();
                 break;
         }
         

@@ -7,7 +7,7 @@
 .container_project{
 	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
 	margin-bottom: 2vh;
-	padding: 1vh;
+	padding: 15px;
 }
 .container_project p{
 	text-align: justify;
@@ -29,7 +29,6 @@
 #link_slick{
 	text-decoration: none;
 	color: #337ab7;
-	/*color: rgba(0, 100, 0, 1);*/
 }
 
 #page_projects span, #page_projects a{
@@ -41,13 +40,11 @@
 	opacity: 0;
 	transition: all 1.5s ease-in-out;
 	transform: scale(0);
-	/*transform: translateY(80px);*/
 }
 
 #page_projects p.loaded, #page_projects h1.loaded,#page_projects h2.loaded,
 #page_projects h3.loaded, #page_projects a.loaded, #page_projects img.loaded,
 #page_projects span.loaded{
-	/*transform: translateY(0px);*/
 	transform: scale(1);
 	opacity: 1;
 }

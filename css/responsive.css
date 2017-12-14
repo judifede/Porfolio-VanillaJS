@@ -3,36 +3,45 @@
 	.navbar_out{
 		display: none;
 	}
+
 	/*-------------------- Home --------------------*/
 	.img_scroll_to{
 		width: 115px;
 		height: 115px;
 	}
+
 	#home #caja_iconos{
 		display: block;
 	}
+
 	#home #caja_iconos div{
 		width: 22%;
 	}
+
 	#home #caja_iconos p{
 		font-size: 14pt;
 		margin-top: 5px;
 	}
+
 	h1.text_header br{
 		display: none;
 	}
+
 	h1.text_header{
 		font-size: 28pt;
 	}
+
 	h2.text_header{
 		font-size: 22pt;
 	}
+
 	/*-------------------- About Me --------------------*/
 	.img_tecnologias{
 		width: 95px;
 		height: 95px;
 		margin: 2px;
 	}
+
 	#page_sobre_mi article div div p{
 		font-size: 14pt;
 	}
@@ -42,15 +51,19 @@
 	.container_footer div p{
 		font-size: 16pt;
 	}
+
 	.img_footer{
 		width: 45px;
 	}
+
 	.img_footer[alt="Telegram"]{
 		margin-right: 1.2vw;
 	}
-	.img_footer[alt="Gmail"]{
+
+	#email_address{
 		margin-right: 0.5vw;
 	}
+
 	#flecha_subir{
 		text-align: right !important;
 		float: right;
@@ -66,32 +79,41 @@
 	.navbar_fixed_top{
 		display: block;
 	}
+
 	.input_text_up{
 		display: block;
 	}
+
 	.navbar_out{
 		display: none;
 	}
+
 	/*-------------------- Home --------------------*/
 	#portrait_photo{
 		margin: 25px 0 10px;
 	}
+
 	#home #caja_iconos{
 		display: block;
 	}
+
 	#home #caja_iconos div{
 		width: 28%;
 	}
+
 	#home #caja_iconos p{
 		font-size: 12pt;
 	}
+
 	h1.text_header br{
 		display: none;
 	}
+
 	h1.text_header{
 		font-size: 25pt;
 		margin-top: 20px !important;
 	}
+
 	h2.text_header{
 		font-size: 19pt;
 		margin-top: 20px !important;
@@ -102,6 +124,7 @@
 		width: 85px;
 		height: 85px;
 	}*/
+
 	#page_sobre_mi article div div p{
 		font-size: 12pt;
 		text-align: center;
@@ -112,12 +135,15 @@
 	.container_footer div{
 		text-align: center;
 	}
+
 	.container_footer div p{
 		font-size: 14pt;
 	}
+
 	.img_footer{
 		width: 45px;
 	}
+
 	#flecha_subir{
 		width: 44px;
 		height: 44px;
@@ -146,18 +172,23 @@
 	#container_number_email{
 		width: 100%;
 	}
+
 	#container_socialMedia{
 		width: 100%;
 	}
+
 	#container_socialMedia h2{
 		font-size: 18pt;
 	}
+
 	#container_legalidad{
 		width: 60%;
 	}
+
 	#container_legalidad span{
 		display: block;
 	}
+
 	.img_footer{
 		width: 45px;
 	}
