@@ -8,14 +8,6 @@ body{
 	font-size: 25px;
 }
 
-#atras{
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	width: 80px;
-	height: 80px;
-}
-
 h2{
 	display: inline;
 	margin: auto auto 4% auto;
@@ -136,11 +128,6 @@ input[type='radio']:checked:after {
 
 @media (min-width: 2000px){
 	
-	#atras{
-		width: 160px;
-		height: 160px;
-	}
-	
 	h2{
 		font-size: 65px;
 	}
@@ -220,11 +207,6 @@ input[type='radio']:checked:after {
 
 	body{
 		font-size: 20px
-	}
-
-	#atras{
-		width: 40px;
-		height: 40px;
 	}
 
 	h2{

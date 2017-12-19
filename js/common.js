@@ -56,26 +56,6 @@ $(document).ready(function(){
 		}
 	}
 	
-	/*function scrollToContent(content){
-		
-		switch(content){ 
-			case "page_sobre_mi":
-			window.scroll(0,findPosition(document.getElementById(content)));
-			break;
-			case "page_proyectos":
-			window.scroll(0,findPosition(document.getElementById(content)));
-			break;
-			case "proyecto_abaco":
-			window.scroll(0,findPosition(document.getElementById(content)));
-			break;
-			case "footer":
-			window.scroll(0,findPosition(document.getElementById(content)));
-			break;
-			default:
-			window.location.reload(true);
-		}
-	}/*
-	
 	/* Métodos Scroll*/
 	$(window).on('scroll', function () {
 		home_scroll_arrow();
@@ -89,7 +69,6 @@ $(document).ready(function(){
 		texto_portrait_photo.addClass('loaded');
 		texto_text_header.addClass('loaded');
 	});
-
 	
 	function home_scroll_arrow(){
 		var current_scroll = window.pageYOffset || document.body.scrollTop;
@@ -210,7 +189,5 @@ $(document).ready(function(){
 		var side = window[['innerHeight', 'innerWidth'][['vh', 'vw'].indexOf(parts[2])]]
 		return side * (q/100)
 	}
-
-	
 	
 });

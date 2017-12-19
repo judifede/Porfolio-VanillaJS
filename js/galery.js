@@ -46,6 +46,9 @@ $(document).ready(function(){
             case 'project=cm3ramblas':
                 img_galery_src= "../img/galeria/CentroMédicoTresRamblas/CM3Ramblas" + i + ".png";
                 break;
+            case 'project=serietoday':
+                img_galery_src= "../img/galeria/SerieToday/SerieToday" + i + ".png";
+                break;    
             default:
                 alert("Proyecto no encontrado");
                 break;
@@ -56,30 +59,30 @@ $(document).ready(function(){
     function managementGalery(){
         var actualPage = checkPage();
         var obj_nombre_proyecto = document.getElementById('project_name');
-        var link_back = document.getElementById('link_back');
         
         switch(actualPage){
             case "project=abaco":
                 obj_nombre_proyecto.innerHTML = "Abaco";
-                link_back.href = "../index.html#project_abaco";
                 num_images = 2;
                 createImages(actualPage);
                 break;
             case "project=senderismo":
                 obj_nombre_proyecto.innerHTML = "SenderismoGC";
-                link_back.href = "../index.html#project_senderismo";
                 num_images = 7;
                 createImages(actualPage);
                 break;
             case "project=cm3ramblas":
                 obj_nombre_proyecto.innerHTML = "Centro Médico Tres Ramblas";
-                link_back.href = "../index.html#project_cm3ramblas";
+                num_images = 4;
+                createImages(actualPage);
+                break;
+            case "project=serietoday":
+                obj_nombre_proyecto.innerHTML = "Serie Today";
                 num_images = 4;
                 createImages(actualPage);
                 break;
             default:
 			    alert("Proyecto no encontrado");
-                link_back.click();
                 break;
         }
         

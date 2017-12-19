@@ -1,4 +1,4 @@
-footer{
+#footer{
 	overflow: hidden;
 	background-color: rgba(20, 20, 20, 0.6) !important;/* Fondo Gris Oscuro */
 	padding: 15px 0 15px;/*top y bot*/
@@ -74,15 +74,15 @@ footer{
 	margin-right: 1.2vw;
 }
 
+#footer a{
+	-webkit-user-drag: none;	
+}
+
 #email_address{
 	margin-left: 1.2vw;	
 }
 
-.img_footer[alt="Gmail"]{
-	/*margin-right: 1.2vw;*/
-}
-
-.img_footer:hover, .img_scrollTo_footer:hover{
+.img_footer_link:hover{
 	transform: scale(1.1,1.1);
 }
 

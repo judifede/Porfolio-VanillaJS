@@ -1,12 +1,6 @@
 body{
 	text-align: center;
-}
-
-#atras{
-	float: left;
-	width: 80px;
-	height: 80px;
-	margin: 3% auto auto 3%;
+	margin: auto;
 }
 
 #moneda{
@@ -81,11 +75,6 @@ fieldset{
 
 @media (max-width: 768px){
 
-	#atras{
-		width: 60px;
-		height: 60px;
-	}
-
 	#moneda{
 		width: 100px;
 		height: 100px;
@@ -117,11 +106,6 @@ fieldset{
 }
 
 @media (max-width: 425px){
-
-	#atras{
-		width: 60px;
-		height: 60px;
-	}
 
 	#moneda{
 		width: 100px;
