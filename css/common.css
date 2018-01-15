@@ -8,7 +8,7 @@ body{
 	min-width: 320px;
 }
 
-section{
+.full_height{
 	min-height: 100vh;
 	padding: 15px;
 	flex: 1;

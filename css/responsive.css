@@ -5,9 +5,8 @@
 	}
 
 	/*-------------------- Home --------------------*/
-	.img_scroll_to{
-		width: 115px;
-		height: 115px;
+	#home article{
+		top: 20vh;
 	}
 
 	#home #caja_iconos{
@@ -45,7 +44,6 @@
 	#page_sobre_mi article div div p{
 		font-size: 14pt;
 	}
-
 
 	/*-------------------- Footer --------------------*/
 	.container_footer div p{
@@ -120,14 +118,33 @@
 	}
 
 	/*-------------------- About Me --------------------*/
-	/*.imgTecnologias{
-		width: 85px;
-		height: 85px;
-	}*/
 
 	#page_sobre_mi article div div p{
 		font-size: 12pt;
 		text-align: center;
+	}
+
+	/*-------------------- Projects --------------------*/
+
+	.slider {
+		width: 650px;
+		max-height: 450px;
+	}
+	
+	.slide img {
+		max-height: 450px;
+	}
+
+	.slide img.big_img {
+		width: 650px;
+	}
+
+	.cross_slider{
+		display: block;
+	}
+
+	.btn-primary.type_button{
+		margin-top: 2%;
 	}
 
 
@@ -162,6 +179,29 @@
 
 	#home #caja_iconos{
 		display: none;
+	}
+
+	/*-------------------- Projects --------------------*/
+
+	.slider {
+		width: 400px;
+		max-height: 400px;
+	}
+	
+	.slide img {
+		max-height: 400px;
+	}
+
+	.slide img.big_img {
+		width: 400px;
+	}
+
+	.cross_slider{
+		display: block;
+	}
+
+	.btn-primary.type_button{
+		margin-top: 2%;
 	}
 	
 	/*-------------------- Footer --------------------*/

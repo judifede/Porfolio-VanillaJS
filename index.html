@@ -14,15 +14,17 @@
         <link rel="stylesheet" type="text/css" href="css/aboutme.css">
         <link rel="stylesheet" type="text/css" href="css/projects.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" type="text/css" href="css/bxslider/jquery.bxslider.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bxslider/jquery.bxslider.css">
+		<link rel="stylesheet" type="text/css" href="css/galery.css"/>
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/bxslider/jquery.bxslider.js"></script>		
+	    <script src="js/galery.js"></script>		
 	</head>
 	<body>
 		
-		<section id="home">
+		<section class="full_height" id="home">
 			<article>				
 				<img src="img/judifede.jpg" alt="Portrait photo" id="portrait_photo">
 		        <h1 class="text_header">JUAN DIEGO <br> FERNÁNDEZ DÉNIZ</h1>
@@ -32,7 +34,7 @@
 			</article>
 		</section>
 
-		<section id="page_aboutme">
+		<section class="full_height" id="page_aboutme">
 			<article>
 				<h1>SOBRE MI</h1>
 				<div class="container_aboutme">
@@ -106,7 +108,18 @@
 			</article>
 		</section>
 
-		<section id="page_projects">
+		<div id="container_galery"></div>
+		<div class="slider">
+			<div class="slides"></div>
+			<div class="slider_controls">
+				<span class="prev"><img src="img/icons/chevron-thin-left.svg"></span>
+				<span class="next"><img src="img/icons/chevron-thin-right.svg"></span>
+				<span class="cross_slider"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
+			</div>
+			<div class="slider_selectors"></div>
+		</div>
+
+		<section class="full_height" id="page_projects">
 			<article>
 				<h1 class="text_header">PROYECTOS</h1>
 
@@ -125,7 +138,7 @@
 						<span><strong>Fecha:</strong> Octubre de 2017</span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galery.html?project=cm3ramblas" class="btn-primary type_button" target="_blank">Galería</a>
+						<a class="btn-primary type_button" target="_blank" project="cm3ramblas">Galería</a>
 						<h3 class="text_header">Tecnologías utilizadas</h3>
 						<img src="img/logos-tecnologias/html5.png" alt="Tecnología CMTresRamblas 1" class="img_technology">
 						<img src="img/logos-tecnologias/css3.png" alt="Tecnología CMTresRamblas 2" class="img_technology">
@@ -146,7 +159,7 @@
 						<span><strong>Fecha:</strong> Marzo de 2017</span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galery.html?project=serietoday" class="btn-primary type_button" target="_blank" target="_blank">Galería</a>
+						<a class="btn-primary type_button" target="_blank" target="_blank" project="serietoday">Galería</a>
 						<h3 class="text_header">Tecnologías utilizadas</h3>
 						<img src="img/logos-tecnologias/android-studio.png" alt="Tecnología Serie Today 1" class="img_technology">
 						<img src="img/logos-tecnologias/SQLite.png" alt="Tecnología Serie Today 2" class="img_technology">
@@ -193,7 +206,7 @@
 						<span><strong>Fecha:</strong> Mayo de 2016</span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galery.html?project=abaco" class="btn-primary type_button" target="_blank">Galería</a>
+						<a class="btn-primary type_button" target="_blank" project="abaco">Galería</a>
 						<h3 class="text_header">Tecnologías utilizadas</h3>
 						<img src="img/logos-tecnologias/html5.png" alt="Tecnología Abaco 4" class="img_technology">
 						<img src="img/logos-tecnologias/css3.png" alt="Tecnología Abaco 5" class="img_technology">
@@ -223,7 +236,7 @@
 						<span><strong>Fecha:</strong> Marzo de 2016</span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="pages/galery.html?project=senderismo" class="btn-primary type_button" target="_blank">Galería</a>
+						<a class="btn-primary type_button" target="_blank" project="senderismo">Galería</a>
 						<h3 class="text_header">Tecnologías utilizadas</h3>
 						<img src="img/logos-tecnologias/html5.png" alt="Tecnología Senderismo 1" class="img_technology">
 						<img src="img/logos-tecnologias/css3.png" alt="Tecnología Senderismo 2" class="img_technology">
