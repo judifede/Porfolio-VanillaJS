@@ -59,17 +59,14 @@ $(document).ready(function(){
 	/* Métodos Scroll*/
 	$(window).on('scroll', function () {
 		home_scroll_arrow();
-		texto_scroll();
+		content_scroll();
 		close_course();
 	});
 
 	$(window).on('load', function () {
-		var texto_portrait_photo = $('#home #portrait_photo');
-		var texto_text_header = $('#home .text_header');
-		texto_portrait_photo.addClass('loaded');
-		texto_text_header.addClass('loaded');
+		content_scroll();
 	});
-	
+
 	function home_scroll_arrow(){
 		var current_scroll = window.pageYOffset || document.body.scrollTop;
 		var flecha="";
@@ -92,8 +89,19 @@ $(document).ready(function(){
 		
 	}
 
-	function texto_scroll(){
+	function content_scroll(){
 		var current_scroll = window.pageYOffset || document.body.scrollTop;
+
+		//Home
+
+		var texto_portrait_photo = $('#home #portrait_photo');
+		var texto_text_header = $('#home .text_header');
+
+		if(current_scroll>=0){
+			texto_portrait_photo.addClass('loaded');
+			texto_text_header.addClass('loaded');
+		}
+
 
 		//Sobre Mi
 
