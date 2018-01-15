@@ -7,14 +7,14 @@ var currentSlide;
 var timer;
 var num_images;
 var img_galery_src;
-var big_img;
+var big_img = false;
 
 $(document).ready(function () {
     slider = $(".slider");
     slides = $(".slides");
     slider_selectors = $(".slider_selectors");
 
-    /*  Botones Galería  */ 
+    // Apertura de Galería
     $('.btn-primary.type_button').click(function(){
         if($(this).attr('project')){
             managementGalery($(this).attr('project'));
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     });
     
-    /* Cierre de Galería*/
+    // Cierre de Galería
     $('#container_galery').click(function(){
         close_galery();
         empty_galery();		
@@ -40,24 +40,35 @@ $(document).ready(function () {
     });
 
 
-    /* Botones Galería */
+    // Botones Galería 
+
     $(".prev").click(function() {
         resetTimer();
         prev();
     });
-
+    
     $(".next").click(function() {
         resetTimer();
         next();
     });
     
-    $(".selector").click(function() {
-        resetTimer();
-        goTo($(this).attr('data-slide'));
-    });
+    //Flechas del teclado izquierda y derecha
+    $('body').keyup(function (event) {
+    
+        if (event.keyCode == 37) {
+            // Anterior
+            prev();
+        } else if (event.keyCode == 39) {
+            // Siguiente
+            next();
+        }
+    
+    }); 
 
+    //Activa el auto play si lo tenemos activado con la variable inicial a true
     if (autoPlay)
         timer = setInterval(next, 9000);
+    
 });
 
 function setup_slider(){
@@ -73,6 +84,16 @@ function setup_slider(){
     slides.children().first().before(last);
     slides.children().last().after(first);
     slides.css('margin-left', '-100%');
+
+
+    // Botones inferiores
+    // Para que funcione este evento es necesario que se hayan creado con managementGalery.
+    // Porque no hay ninguno en el HTML.
+    $(".selector").click(function() {
+        resetTimer();
+        goTo($(this).attr('data-slide'));
+        
+    });
 }
 
 function prev() {
@@ -179,11 +200,12 @@ function createImages(project){
             //Img dentro de article
             var img = document.createElement("img");
             src_galery(project, i);
-            
             var img_galery_alt = "img_galery" + i;
             img.setAttribute("src", img_galery_src);
             img.setAttribute("alt", img_galery_alt);
 
+            // big_img -> Para imágenes con una resolución alta y darles un css diferente.
+            //Está iniciada a false al principio de este archivo.
             if(big_img){
                img.setAttribute("class", "big_img");  
             }
@@ -207,14 +229,15 @@ function createImages(project){
 
 function src_galery(project, i){
 
+    // Cada case es un proyecto.
+    // big_img -> Para imágenes con una resolución alta y darles un css diferente.
+    // Está iniciada a false al principio de este archivo.
     switch(project){
         case 'cm3ramblas':
             img_galery_src= "img/galeria/CentroMédicoTresRamblas/CM3Ramblas" + i + ".png";
-            big_img = false;
             break;
         case 'serietoday':
             img_galery_src= "img/galeria/SerieToday/SerieToday" + i + ".png";
-            big_img = false;
             break;    
         case 'abaco':
             img_galery_src= "img/galeria/Abaco/Abaco" + i + ".png";

@@ -12,7 +12,7 @@ body{
 	width: 450px;
 	height: 450px;
 	position: absolute;
-	left: 40%;
+	left: 30%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -24,7 +24,7 @@ body{
 	right: 10%;
 }
 
-fieldset{
+#results{
 	text-align: center;
 	position: absolute;
 	top: 20%;
@@ -40,7 +40,7 @@ fieldset{
 #movimiento{
 	position: absolute;
 	display: inline-block;
-	transform: translate(-50%, -50%);
+	transform: translate(-60%, -50%);
 	animation-name: animacion;
 	animation-duration: 2.1s;
 	animation-iteration-count: infinite;
@@ -50,9 +50,9 @@ fieldset{
 }
 
 @keyframes animacion { 
-	0% { left: 50%; top: 50%; } 
-	50% { left: 50%; top: 20%; } 
-	100% { left: 50%; top: 50%; }
+	0% { left: 40%; top: 50%; } 
+	50% { left: 40%; top: 20%; } 
+	100% { left: 40%; top: 50%; }
 }
 
 @keyframes animacionMV { 
@@ -71,10 +71,48 @@ fieldset{
 	body, #boton{
 		font-size: 30px;
 	}
+
+	#moneda{
+		width: 200px;
+		height: 200px;
+	}
+
+	#mano{
+		width: 350px;
+		height: 350px;
+		left: 30%;
+		top: 50%;
+	}
+
+	
+}
+
+@media (max-width: 1024px){
+
+	body, #boton{
+		font-size: 25px;
+	}
+
+	#boton{
+		top: initial;
+		bottom: 5%;
+		left: 5%;
+	}
+
+	#results{
+		top: initial;
+		right: 5%;
+		bottom: 5%;
+	}
+
 }
 
 @media (max-width: 768px){
 
+	body, #boton{
+		font-size: 20px;
+	}
+
 	#moneda{
 		width: 100px;
 		height: 100px;
@@ -94,44 +132,13 @@ fieldset{
 	#boton{
 		top: initial;
 		bottom: 5%;
-		left: 5%;
+		left: 3%;
 	}
 
-	fieldset{
+	#results{
 		top: initial;
-		right: 5%;
+		right: 3%;
 		bottom: 5%;
 	}
 	
-}
-
-@media (max-width: 425px){
-
-	#moneda{
-		width: 100px;
-		height: 100px;
-	}
-
-	#mano{
-		width: 200px;
-		height: 200px;
-		left: 40%;
-		top: 40%;
-	}
-
-	#movimiento{
-		animation-name: animacionMV;
-	}
-
-	#boton{
-		top: initial;
-		bottom: 5%;
-		left: 5%;
-	}
-
-	fieldset{
-		top: initial;
-		right: 5%;
-		bottom: 5%;
-	}
 }

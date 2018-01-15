@@ -97,7 +97,7 @@ $(document).ready(function(){
 		var texto_portrait_photo = $('#home #portrait_photo');
 		var texto_text_header = $('#home .text_header');
 
-		if(current_scroll>=0){
+		if(current_scroll>=-1){
 			texto_portrait_photo.addClass('loaded');
 			texto_text_header.addClass('loaded');
 		}
