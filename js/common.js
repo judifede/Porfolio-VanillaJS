@@ -13,16 +13,16 @@ $(document).ready(function(){
 
 	function open_course(course){
 		if(course!=null){
-
 			$('#container_certificates').addClass('opened');
 			switch(course){
 				case 'WebDesignHTMLCSS':
-				$('#img_course_udemy1').addClass('opened');
+					$('.container_udemy_course .img_course_udemy1').addClass('opened');
 				
 				break;
-				/*case '':
+				case 'Bootstrap4':
+					$('.container_udemy_course .img_course_udemy2').addClass('opened');
 				
-				break;*/
+				break;
 				
 				default:
 				
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 		if($('#container_certificates').hasClass('opened')){
 			$('#container_certificates').removeClass('opened');
-			$('#img_course_udemy1').removeClass('opened');
+			$('.container_udemy_course img').removeClass('opened');
 
 		}
 	}
