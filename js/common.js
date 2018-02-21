@@ -23,6 +23,10 @@ $(document).ready(function(){
 					$('.container_udemy_course .img_course_udemy2').addClass('opened');
 				
 				break;
+				case 'BasicsOfPHP':
+					$('.container_udemy_course .img_course_udemy3').addClass('opened');
+				
+				break;
 				
 				default:
 				
@@ -135,6 +139,7 @@ $(document).ready(function(){
 		//Proyectos
 
 		//Textos Proyectos
+		var texto_solitario = $('#project_solitario p, #project_solitario h1, #project_solitario h2, #project_solitario h3, #project_solitario a, #project_solitario img, #project_solitario span');
 		var texto_cm3ramblas = $('#project_cm3ramblas p, #project_cm3ramblas h1, #project_cm3ramblas h2, #project_cm3ramblas h3, #project_cm3ramblas a, #project_cm3ramblas img, #project_cm3ramblas span');
 		var texto_serietoday = $('#project_serietoday p, #project_serietoday h1, #project_serietoday h2, #project_serietoday h3, #project_serietoday a, #project_serietoday img, #project_serietoday span');
 		var texto_hibernate = $('#project_hibernate p, #project_hibernate h1, #project_hibernate h2, #project_hibernate h3, #project_hibernate a, #project_hibernate img, #project_hibernate span');
@@ -145,6 +150,9 @@ $(document).ready(function(){
 		
 		//Posiciones en scroll Proyectos //El viewportToPixels es para que la posición cuente nada más aparezca
 
+		var position_solitario = findPosition(document.getElementById('project_solitario'))
+		- viewportToPixels('90vh');
+		
 		var position_cm3ramblas = findPosition(document.getElementById('project_cm3ramblas'))
 		- viewportToPixels('90vh');
 
@@ -167,7 +175,10 @@ $(document).ready(function(){
 		- viewportToPixels('90vh');
 
 		//Detecta posición del objeto en scroll Proyectos		
-		
+
+		if(current_scroll>=position_solitario){
+			texto_solitario.addClass('loaded');
+		}
 		if(current_scroll>=position_cm3ramblas){
 			texto_cm3ramblas.addClass('loaded');
 		}
