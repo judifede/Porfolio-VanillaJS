@@ -1,5 +1,5 @@
 #page_aboutme{
-	background-color: rgba(200, 200, 200, 0.4);/*  pastel*/
+	background-color: rgba(200, 200, 200, 0.4);
 }
 
 #page_aboutme article{
@@ -38,6 +38,13 @@
 
 .link_udemy{
 	cursor: pointer;
+
+}
+
+.link_udemy:before {
+    content: "•"; 
+    padding-right: 8px;
+    color: black;
 }
 
 .udemy_course{
@@ -47,7 +54,6 @@
 	top: 50%;
 	left: 50%;
 	transition: all 1s ease-in-out;
-	/*transform: scale(0);		*/
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	z-index: 200;
@@ -68,11 +74,9 @@
 	opacity: 0;
 	transition: all 1.5s ease-in-out;
 	transform: translateY(80px);
-	/*transform: scale(0);*/
 }
 
 #page_aboutme p.loaded, #page_aboutme h1.loaded, #page_aboutme h2.loaded, #page_aboutme h3.loaded{
 	transform: translateY(0px);
 	opacity: 1;
-	/*transform: scale(1);*/
 }
