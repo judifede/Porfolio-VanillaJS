@@ -47,7 +47,14 @@
 	position: relative;
 }
 
-.fa-angle-double-down{
+.container_angle_double_down{
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	bottom: 25px;
+}
+
+.container_angle_double_down .fa-angle-double-down{
 	color: white;
 	position: relative;
 	animation-name: scroll_arrow_double;

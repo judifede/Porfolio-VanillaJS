@@ -124,6 +124,10 @@
 		text-align: center;
 	}
 
+	#container_education br{
+		display: block;
+	}
+
 	/*-------------------- Projects --------------------*/
 
 	.slider {

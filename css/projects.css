@@ -36,6 +36,10 @@
 	display: inline-block;
 }
 
+#projects_header{
+	text-align: center;
+}
+
 #page_projects p, #page_projects h1, #page_projects h2,
 #page_projects h3, #page_projects a, #page_projects img, #page_projects span{
 	opacity: 0;

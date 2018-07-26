@@ -17,19 +17,26 @@ $(document).ready(function(){
 			switch(course){
 				case 'WebDesignHTMLCSS':
 					$('.container_udemy_course .img_course_udemy1').addClass('opened');
-				
 				break;
 				case 'Bootstrap4':
 					$('.container_udemy_course .img_course_udemy2').addClass('opened');
-				
 				break;
 				case 'BasicsOfPHP':
 					$('.container_udemy_course .img_course_udemy3').addClass('opened');
-				
 				break;
-				
+				case 'IonicAngularJS':
+					$('.container_udemy_course .img_course_udemy4').addClass('opened');
+				break;
+				case 'AJAXPHPValidation':
+					$('.container_udemy_course .img_course_udemy5').addClass('opened');
+				break;
+				case 'ArcadeJSCanvas':
+					$('.container_udemy_course .img_course_udemy6').addClass('opened');
+				break;
+				case 'AllIdeasPHP':
+					$('.container_udemy_course .img_course_udemy7').addClass('opened');
+				break;
 				default:
-				
 				break;
 			}
 		}
@@ -37,7 +44,6 @@ $(document).ready(function(){
 
 	//La imagen se cerrará al hacer scroll y al pulsar fuera de la imagen
 	function close_course(){
-
 		if($('#container_certificates').hasClass('opened')){
 			$('#container_certificates').removeClass('opened');
 			$('.container_udemy_course img').removeClass('opened');
@@ -110,35 +116,37 @@ $(document).ready(function(){
 		//Sobre Mi
 
 		//Textos Sobre Mi
-		var texto_education = $('#container_education p, #container_education h1, #container_education h2, #container_education h3');
-		var texto_experience = $('#container_experience p, #container_experience h1, #container_experience h2, #container_experience h3');
-		var texto_competences = $('#container_competences p, #container_competences h1, #container_competences h2, #container_competences h3');
+		var texto_aboutme = $('#container_aboutme *');
+		var texto_experience = $('#container_experience *');
+		var texto_education = $('#container_education *');
 
 		//Posiciones en scroll Sobre Mi //El viewportToPixels es para que la posición cuente nada más aparezca
-		var position_education = findPosition(document.getElementById('container_education'))
+		var position_aboutme = findPosition(document.getElementById('container_aboutme'))
 		- viewportToPixels('90vh');
 
 		var position_experience = findPosition(document.getElementById('container_experience'))
 		- viewportToPixels('90vh');
 
-		var position_competences = findPosition(document.getElementById('container_competences'))
+		var position_education = findPosition(document.getElementById('container_education'))
 		- viewportToPixels('90vh');
 
 		//Detecta posición del objeto en scroll Sobre Mi
 		
-		if(current_scroll>=position_education){
-			texto_education.addClass('loaded');
+		if(current_scroll>=position_aboutme){
+			texto_aboutme.addClass('loaded');
 		}
 		if(current_scroll>=position_experience){
 			texto_experience.addClass('loaded');
 		}
-		if(current_scroll>=position_competences){
-			texto_competences.addClass('loaded');
+		if(current_scroll>=position_education){
+			texto_education.addClass('loaded');
 		}
 
 		//Proyectos
 
 		//Textos Proyectos
+		var texto_projects_header = $('#projects_header');
+		var texto_sispecan = $('#project_sispecan p, #project_sispecan h1, #project_sispecan h2, #project_sispecan h3, #project_sispecan a, #project_sispecan img, #project_sispecan span');
 		var texto_solitario = $('#project_solitario p, #project_solitario h1, #project_solitario h2, #project_solitario h3, #project_solitario a, #project_solitario img, #project_solitario span');
 		var texto_cm3ramblas = $('#project_cm3ramblas p, #project_cm3ramblas h1, #project_cm3ramblas h2, #project_cm3ramblas h3, #project_cm3ramblas a, #project_cm3ramblas img, #project_cm3ramblas span');
 		var texto_serietoday = $('#project_serietoday p, #project_serietoday h1, #project_serietoday h2, #project_serietoday h3, #project_serietoday a, #project_serietoday img, #project_serietoday span');
@@ -150,32 +158,37 @@ $(document).ready(function(){
 		
 		//Posiciones en scroll Proyectos //El viewportToPixels es para que la posición cuente nada más aparezca
 
+		var position_projects_header = findPosition(document.getElementById('projects_header'))
+		- viewportToPixels('90vh');
+
+		
+		var position_sispecan = findPosition(document.getElementById('project_sispecan'))
+		- viewportToPixels('90vh');
 		var position_solitario = findPosition(document.getElementById('project_solitario'))
 		- viewportToPixels('90vh');
-		
 		var position_cm3ramblas = findPosition(document.getElementById('project_cm3ramblas'))
 		- viewportToPixels('90vh');
-
 		var position_serietoday = findPosition(document.getElementById('project_serietoday'))
 		- viewportToPixels('90vh');
-
 		var position_hibernate = findPosition(document.getElementById('project_hibernate'))
 		- viewportToPixels('90vh');
-
 		var position_abaco = findPosition(document.getElementById('project_abaco'))
 		- viewportToPixels('90vh');
-
 		var position_senderismo = findPosition(document.getElementById('project_senderismo'))
 		- viewportToPixels('90vh');
-
 		var position_diw = findPosition(document.getElementById('project_diw'))
 		- viewportToPixels('90vh');
-
 		var position_trabajosjs = findPosition(document.getElementById('project_trabajosjs'))
 		- viewportToPixels('90vh');
 
 		//Detecta posición del objeto en scroll Proyectos		
 
+		if(current_scroll>=position_projects_header){
+			texto_projects_header.addClass('loaded');
+		}
+		if(current_scroll>=position_sispecan){
+			texto_sispecan.addClass('loaded');
+		}
 		if(current_scroll>=position_solitario){
 			texto_solitario.addClass('loaded');
 		}

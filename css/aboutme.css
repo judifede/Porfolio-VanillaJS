@@ -1,26 +1,29 @@
-#page_aboutme{
+#page_aboutme {
 	background-color: rgba(200, 200, 200, 0.4);
+	padding: 0 10vw 25px 10vw;
 }
 
-#page_aboutme article{
+#page_aboutme article {
 	text-align: center;
 }
 
-#page_aboutme article div div p{
+#page_aboutme article div p,
+.list_link_udemy {
 	font-size: 14pt;
 	text-align: justify;
+	font-family: Nunito !important;
+	/*font-weight: bold;	*/
 }
 
-.container_aboutme{
-	margin-left: 10vw;
-	margin-right: 10vw;
+#container_education p {
+	text-align: center;
 }
 
-#container_education p{
-	text-align: center !important;
+#container_education br{
+	display: none;
 }
 
-#container_certificates{
+#container_certificates {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -32,22 +35,15 @@
 	z-index: 100;
 }
 
-#container_certificates.opened{
-	display: block;	
+#container_certificates.opened {
+	display: block;
 }
 
-.link_udemy{
+#page_aboutme p .link_udemy {
 	cursor: pointer;
-
 }
 
-.link_udemy:before {
-    content: "•"; 
-    padding-right: 8px;
-    color: black;
-}
-
-.udemy_course{
+.udemy_course {
 	display: none;
 	width: 50vw;
 	position: fixed;
@@ -59,24 +55,33 @@
 	z-index: 200;
 }
 
-.udemy_course.opened{
+.udemy_course.opened {
 	display: block;
-	opacity: 1;	
+	opacity: 1;
 }
 
-#container_competences{
-	margin-bottom: 25px;
+#page_aboutme .fa-map-marker-alt {
+	margin-right: 5px;
 }
 
-#page_aboutme p a{color: rgba(0, 100, 0, 1);}
+#page_aboutme p a,
+.link_udemy {
+	color: rgba(0, 100, 0, 1);
+	text-decoration: underline;
+	cursor: pointer;
+}
 
-#page_aboutme p, #page_aboutme h1, #page_aboutme h2, #page_aboutme h3{
+#page_aboutme p,
+#page_aboutme h1,
+#page_aboutme h2,
+#page_aboutme h3,
+#page_aboutme li {
 	opacity: 0;
 	transition: all 1.5s ease-in-out;
 	transform: translateY(80px);
 }
 
-#page_aboutme p.loaded, #page_aboutme h1.loaded, #page_aboutme h2.loaded, #page_aboutme h3.loaded{
+#page_aboutme *.loaded {
 	transform: translateY(0px);
 	opacity: 1;
 }
