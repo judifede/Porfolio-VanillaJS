@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-	<head>
-		<title>Piedra, papel y tijera</title>
-		<meta name="author" content="Judifede"/>
-		<meta charset="UTF-8"/>
-		<link rel="shortcut icon" type="image/x-icon" href="../../img/icons/favicon.png" />
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="../../css/piedra_papel_y_tijera.css" title="style" />
-	</head>
-	<body>
-		<h2>PIEDRA, PAPEL O TIJERAS</h2>
-		<div id="registro">
-			<p id="G"></p>
-			<p id="E"></p>
-			<p id="P"></p>
-		</div>
-		<p id="Resultado"></p>
-		<div id="container_main">	
-			<fieldset id="fieldset_CPU">
-				<legend>Rival</legend>
-				<img src="../../img/trabajosJS/dr_kawashima.png" id="CPU"/>
-			</fieldset>
 
-			<p id="VS">VS</p>
-				
-			<fieldset id="fieldset_user">
-				<legend>Tú</legend>
-				<img src="../../img/trabajosJS/boochan.png" id="User"/>
-			</fieldset>
-		</div>
-		<fieldset id="Opciones">
-			<legend>Elige una opción</legend>
-			<input type="radio" name="juego" id="Piedra" class="Opcion">Piedra</input>
-			<input type="radio" name="juego" id="Papel" class="Opcion">Papel</input>
-			<input type="radio" name="juego" id="Tijeras" class="Opcion">Tijeras</input>
-			<button type="button" onclick="jugar()" id="botonJ" >JUGAR</button>
+<head>
+	<title>Piedra, papel y tijera</title>
+	<meta name="author" content="Judifede" />
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="../../img/icons/favicon.png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/piedra_papel_y_tijera.css" title="style" />
+</head>
+
+<body>
+	<h2>PIEDRA, PAPEL O TIJERAS</h2>
+	<div id="registro">
+		<p id="G"></p>
+		<p id="E"></p>
+		<p id="P"></p>
+	</div>
+	<p id="Resultado"></p>
+	<div id="container_main">
+		<fieldset id="fieldset_user">
+			<legend>Tú</legend>
+			<img src="../../img/trabajosJS/boochan.png" id="User" />
 		</fieldset>
-		<script language="JavaScript" type="text/javaScript" src="../../js/piedra_papel_y_tijera.js"></script>
-	</body>
+		<p id="VS">VS</p>
+		<fieldset id="fieldset_CPU">
+			<legend>Rival</legend>
+			<img src="../../img/trabajosJS/dr_kawashima.png" id="CPU" />
+		</fieldset>
+
+	</div>
+	<fieldset id="Opciones">
+		<legend>Elige una opción</legend>
+		<input type="radio" name="juego" id="Piedra" class="Opcion">Piedra</input>
+		<input type="radio" name="juego" id="Papel" class="Opcion">Papel</input>
+		<input type="radio" name="juego" id="Tijeras" class="Opcion">Tijeras</input>
+		<button type="button" onclick="jugar()" id="botonJ">JUGAR</button>
+	</fieldset>
+	<script language="JavaScript" type="text/javaScript" src="../../js/piedra_papel_y_tijera.js"></script>
+</body>
+
 </html>

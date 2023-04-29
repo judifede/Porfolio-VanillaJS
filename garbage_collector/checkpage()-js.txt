@@ -1,7 +1,0 @@
-
-function checkPage(){
-        var url = window.location.href;
-        var urlSplitted = url.split('?');
-        var actualPage = urlSplitted[1];
-        return actualPage;
-    }

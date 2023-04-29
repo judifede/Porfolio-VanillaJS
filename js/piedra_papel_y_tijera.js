@@ -40,7 +40,7 @@
 					clearInterval(bucle);
 					jugadaFinal();
 					formula();
-					reiniciar();
+					botonJ.disabled=false;
 				}else{
 					contador++;
 				}
@@ -79,15 +79,4 @@
 					E++;
 					document.getElementById("E").innerHTML = "Empatadas:   " + E;
 				}
-			}
-			
-			function reiniciar(){
-				document.getElementById("Piedra").checked=false;
-				document.getElementById("Papel").checked=false;
-				document.getElementById("Tijeras").checked=false;
-				//document.getElementById("Resultado").innerHTML = "";
-				botonJ.disabled=false;
-				//document.getElementById("CPU").src="../Images/dr_kawashima.png";
-				//document.getElementById("User").src="../Images/boochan.png";
-			} 
-			
+			}			
