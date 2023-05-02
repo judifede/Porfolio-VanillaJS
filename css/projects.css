@@ -4,6 +4,10 @@
 #page_projects article{
 	text-align: center;
 }
+#projects_header{
+	text-align: center;
+	text-decoration: underline;
+}
 .container_project{
 	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
 	margin-bottom: 2vh;
@@ -11,7 +15,9 @@
 }
 .container_project p{
 	text-align: justify;
+	font-size: 20px;
 }
+
 .container_project .type_button{
 	color: white;
 	padding: 1px 6px 1px 6px;
@@ -28,28 +34,11 @@
 }
 
 #link_slick{
-	text-decoration: none;
-	color: #337ab7;
+	color: #FDFFB2;
 }
 
 #page_projects span, #page_projects a{
 	display: inline-block;
 }
 
-#projects_header{
-	text-align: center;
-}
 
-#page_projects p, #page_projects h1, #page_projects h2,
-#page_projects h3, #page_projects a, #page_projects img, #page_projects span{
-	opacity: 0;
-	transition: all 1.5s ease-in-out;
-	transform: translateY(80px);
-}
-
-#page_projects p.loaded, #page_projects h1.loaded,#page_projects h2.loaded,
-#page_projects h3.loaded, #page_projects a.loaded, #page_projects img.loaded,
-#page_projects span.loaded{
-	opacity: 1;
-	transform: translateY(0px);
-}

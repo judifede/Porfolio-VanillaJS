@@ -19,14 +19,14 @@ $(document).ready(function () {
         if($(this).attr('project')){
             managementGalery($(this).attr('project'));
             setup_slider();
-            $('#container_galery').addClass('opened');
+            $('.container_galery').addClass('opened');
             $('.slider').addClass('opened');
         }
 
     });
     
     // Cierre de Galería
-    $('#container_galery').click(function(){
+    $('.container_galery').click(function(){
         close_galery();
         empty_galery();		
     });
@@ -149,8 +149,8 @@ function resetTimer() {
 
 function close_galery(){
     
-    if($('#container_galery').hasClass('opened')){
-        $('#container_galery').removeClass('opened');
+    if($('.container_galery').hasClass('opened')){
+        $('.container_galery').removeClass('opened');
         $('.slider').removeClass('opened');
     }
 }
@@ -169,16 +169,8 @@ function managementGalery(project){
             num_images = 4;
             createImages(project);
             break;
-        case "serietoday":
-            num_images = 4;
-            createImages(project);                
-            break;
         case "abaco":
             num_images = 2;
-            createImages(project);
-            break;
-        case "senderismo":
-            num_images = 7;
             createImages(project);
             break;
         default:
@@ -236,15 +228,8 @@ function src_galery(project, i){
         case 'cm3ramblas':
             img_galery_src= "img/galeria/CentroMédicoTresRamblas/CM3Ramblas" + i + ".png";
             break;
-        case 'serietoday':
-            img_galery_src= "img/galeria/SerieToday/SerieToday" + i + ".png";
-            break;    
         case 'abaco':
             img_galery_src= "img/galeria/Abaco/Abaco" + i + ".png";
-            big_img = true;
-            break;
-        case 'senderismo':
-            img_galery_src= "img/galeria/SenderismoGC/Senderismo" + i + ".png";
             big_img = true;
             break;
         default:
