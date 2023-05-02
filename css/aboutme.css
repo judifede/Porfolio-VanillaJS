@@ -17,6 +17,19 @@
 	font-family: Nunito !important;
 }
 
+.container_experience{
+	min-height: 400px !important;
+	margin-top: 2%;
+}
+
+.container_experience:nth-of-type(even){
+	padding-left: 5%;
+}
+
+.container_experience:nth-of-type(odd){
+	padding-right: 5%;
+}
+
 .container_experience li{
 	font-size: 18px;
 	font-family: Nunito !important;
