@@ -6,7 +6,7 @@
 
 	/*-------------------- Home --------------------*/
 	#home article{
-		top: 20vh;
+		/*top: 20vh;*/
 	}
 
 	#home #caja_iconos{
@@ -18,7 +18,7 @@
 	}
 
 	#home #caja_iconos p{
-		font-size: 14pt;
+		font-size: 16px;
 		margin-top: 5px;
 	}
 
@@ -27,11 +27,11 @@
 	}
 
 	h1.text_header{
-		font-size: 28pt;
+		font-size: 35px;
 	}
 
 	h2.text_header{
-		font-size: 22pt;
+		font-size: 28px;
 	}
 
 	/*-------------------- About Me --------------------*/
@@ -42,24 +42,20 @@
 	}
 
 	#page_sobre_mi article div div p{
-		font-size: 14pt;
+		font-size: 18px;
 	}
 
 	/*-------------------- Footer --------------------*/
 	.container_footer div p{
-		font-size: 16pt;
+		font-size: 20px;
 	}
 
 	.img_footer{
 		width: 45px;
 	}
 
-	.img_footer[alt="Telegram"]{
-		margin-right: 1.2vw;
-	}
-
-	#email_address{
-		margin-right: 0.5vw;
+	.container_contact div{
+		width: 70px;
 	}
 
 	#flecha_subir{
@@ -100,7 +96,7 @@
 	}
 
 	#home #caja_iconos p{
-		font-size: 12pt;
+		font-size: 16px;
 	}
 
 	h1.text_header br{
@@ -108,23 +104,23 @@
 	}
 
 	h1.text_header{
-		font-size: 25pt;
+		font-size: 30px;
 		margin-top: 20px !important;
 	}
 
 	h2.text_header{
-		font-size: 19pt;
+		font-size: 25px;
 		margin-top: 20px !important;
 	}
 
 	/*-------------------- About Me --------------------*/
 
 	#page_sobre_mi article div div p{
-		font-size: 12pt;
+		font-size: 16px;
 		text-align: center;
 	}
 
-	#container_education br{
+	.container_education br{
 		display: block;
 	}
 
@@ -158,11 +154,15 @@
 	}
 
 	.container_footer div p{
-		font-size: 14pt;
+		font-size: 20px;
 	}
 
 	.img_footer{
 		width: 45px;
+	}
+
+	.container_contact div{
+		width: 70px;
 	}
 
 	#flecha_subir{
@@ -209,27 +209,31 @@
 	}
 	
 	/*-------------------- Footer --------------------*/
-	#container_number_email{
+	.container_number_email{
 		width: 100%;
 	}
 
-	#container_socialMedia{
+	.container_socialMedia{
 		width: 100%;
 	}
 
-	#container_socialMedia h2{
-		font-size: 18pt;
+	.container_socialMedia h2{
+		font-size: 24px;
 	}
 
-	#container_legalidad{
+	.container_legalidad{
 		width: 60%;
 	}
 
-	#container_legalidad span{
+	.container_legalidad span{
 		display: block;
 	}
 
 	.img_footer{
 		width: 45px;
+	}
+
+	.container_contact div{
+		width: 70px;
 	}
 }

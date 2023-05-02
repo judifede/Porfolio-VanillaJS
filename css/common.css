@@ -22,11 +22,15 @@ body{
 }
 
 h1.text_header{
-	font-size: 28pt;
+	font-size: 38px;
 }
 
 h2.text_header{
-	font-size: 24pt;
+	font-size: 32px;
+}
+
+h3.text_header{
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #home_arrow{
@@ -43,4 +47,17 @@ h2.text_header{
 
 #home_arrow:hover{
 	transform: scale(1.1,1.1);
+}
+
+
+
+.seeMore{
+	float: left;
+	cursor: pointer;
+	color: blue;
+	font-size: 18px;
+}
+
+.duration{
+	clear: left;
 }
