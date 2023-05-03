@@ -4,10 +4,7 @@
 #page_projects article{
 	text-align: center;
 }
-#projects_header{
-	text-align: center;
-	text-decoration: underline;
-}
+
 .container_project{
 	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
 	margin-bottom: 2vh;
@@ -16,6 +13,10 @@
 .container_project p{
 	text-align: justify;
 	font-size: 20px;
+}
+
+.container_project span{
+	font-size: 18px;
 }
 
 .container_project .type_button{

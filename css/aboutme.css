@@ -1,5 +1,4 @@
 #page_aboutme {
-	background-color: rgba(200, 200, 200, 0.4);
 	padding: 30px 10vw 30px 10vw;
 }
 
@@ -12,22 +11,22 @@
 }
 
 #page_aboutme article div p {
-	font-size: 18px;
+	font-size: 20px;
 	text-align: justify;
 	font-family: Nunito !important;
 }
 
-.container_experience{
-	min-height: 400px !important;
-	margin-top: 2%;
+.container_aboutme p, .container_education p{
+	padding: 0 8%;
 }
 
-.container_experience:nth-of-type(even){
-	padding-left: 5%;
-}
+.container_experience {
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
 
-.container_experience:nth-of-type(odd){
-	padding-right: 5%;
 }
 
 .container_experience li{
