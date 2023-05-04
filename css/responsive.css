@@ -6,10 +6,6 @@
 	}
 
 	/*-------------------- Home --------------------*/
-	#home article {
-		/*top: 20vh;*/
-	}
-
 	#home #caja_iconos {
 		display: block;
 	}
@@ -84,9 +80,6 @@
 	}
 
 	/*-------------------- Home --------------------*/
-	.portrait_photo {
-		/*margin: 25px 0 10px;*/
-	}
 
 	#home .presentation:before {
 		border-left-color: transparent;
