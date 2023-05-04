@@ -5,12 +5,13 @@
 	min-height: 50vh;
 }
 
-#home #portrait_photo {
+#home .portrait_photo {
 	width: 252px;
 	height: 252px;
 	padding: 0;
 	vertical-align: top;
-	margin-top: 40px;
+	position: relative;
+	margin-top: 3%;
 	border: 2px solid darkgrey;
 	border-radius: 50%;
 	transition: all 1.5s ease-in-out;
@@ -30,19 +31,21 @@
 }
 
 #home .presentation {
-	position: relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	z-index: 100;
 	padding: 10px 25px;
 	display: inline-block;
-	margin-top: 50px;
-	margin-left: 30px;
+	position: relative;
+	margin: 5% 0 0 30px;
 	background-color: white;
 	border: 2px solid white;
 }
 
 #home .text_header {
 	color: black;
-	margin: 30px 0 2% 0;
+	/*margin: 10% 0 2% 0;*/
 	/*text-shadow: 1.5px 1.5px 0px black, -1.5px -1.5px 0px black,
 		1.5px 0px 0px black, -1.5px 0px 0px black,
 		0px 1.5px 0px black, 0px -1.5px 0px black,

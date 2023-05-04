@@ -1,64 +1,65 @@
+@media (min-width: 1500px) {
 
-@media (min-width: 1500px) { /* 4K*/
-	.navbar_out{
+	/* 4K*/
+	.navbar_out {
 		display: none;
 	}
 
 	/*-------------------- Home --------------------*/
-	#home article{
+	#home article {
 		/*top: 20vh;*/
 	}
 
-	#home #caja_iconos{
+	#home #caja_iconos {
 		display: block;
 	}
 
-	#home #caja_iconos div{
+	#home #caja_iconos div {
 		width: 22%;
 	}
 
-	#home #caja_iconos p{
+	#home #caja_iconos p {
 		font-size: 16px;
 		margin-top: 5px;
 	}
 
-	h1.text_header br{
+	h1.text_header br {
 		display: none;
 	}
 
-	h1.text_header{
+	h1.text_header {
 		font-size: 35px;
 	}
 
-	h2.text_header{
+	h2.text_header {
 		font-size: 28px;
 	}
 
 	/*-------------------- About Me --------------------*/
-	.img_tecnologias{
+	.img_tecnologias {
 		width: 95px;
 		height: 95px;
 		margin: 2px;
 	}
 
-	#page_sobre_mi article div div p{
+	#page_sobre_mi article div div p {
 		font-size: 18px;
 	}
 
 	/*-------------------- Footer --------------------*/
-	.container_footer div p{
+	.container_footer div p {
 		font-size: 20px;
 	}
 
-	.img_footer{
+	.img_footer {
 		width: 45px;
 	}
 
-	.container_contact div{
+	.container_contact div {
 		width: 70px;
 	}
 
-	#flecha_subir{
+	#flecha_subir {
 		text-align: right !important;
 		float: right;
 		width: 50px;
@@ -69,58 +70,73 @@
 
 
 /* Tablet */
-@media (max-width: 1024px) { 
-	.navbar_fixed_top{
+@media (max-width: 1024px) {
+	.navbar_fixed_top {
 		display: block;
 	}
 
-	.input_text_up{
+	.input_text_up {
 		display: block;
 	}
 
-	.navbar_out{
+	.navbar_out {
 		display: none;
 	}
 
 	/*-------------------- Home --------------------*/
-	#portrait_photo{
-		margin: 25px 0 10px;
+	.portrait_photo {
+		/*margin: 25px 0 10px;*/
 	}
 
-	#home #caja_iconos{
+	#home .presentation:before {
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: white;
+		top: -50px;
+		left: calc(50% - 25px);
+	}
+
+	#home .presentation {
+		width: 100%;
+		margin-left: 0px;
+		padding: 5px 5px;
+	}
+
+	#home #caja_iconos {
 		display: block;
 	}
 
-	#home #caja_iconos div{
+	#home #caja_iconos div {
 		width: 28%;
 	}
 
-	#home #caja_iconos p{
+	#home #caja_iconos p {
 		font-size: 16px;
 	}
 
-	h1.text_header br{
+	h1.text_header br {
 		display: none;
 	}
 
-	h1.text_header{
+	h1.text_header {
 		font-size: 30px;
 		margin-top: 20px !important;
 	}
 
-	h2.text_header{
+	h2.text_header {
 		font-size: 25px;
 		margin-top: 20px !important;
 	}
 
 	/*-------------------- About Me --------------------*/
 
-	#page_sobre_mi article div div p{
+	#page_sobre_mi article div div p {
 		font-size: 16px;
 		text-align: center;
 	}
 
-	.container_education br{
+	.container_education br {
 		display: block;
 	}
 
@@ -130,7 +146,7 @@
 		width: 650px;
 		max-height: 450px;
 	}
-	
+
 	.slide img {
 		max-height: 450px;
 	}
@@ -139,33 +155,33 @@
 		width: 650px;
 	}
 
-	.cross_slider{
+	.cross_slider {
 		display: block;
 	}
 
-	.btn-primary.type_button{
+	.btn-primary.type_button {
 		margin-top: 2%;
 	}
 
 
 	/*-------------------- Footer --------------------*/
-	.container_footer div{
+	.container_footer div {
 		text-align: center;
 	}
 
-	.container_footer div p{
+	.container_footer div p {
 		font-size: 20px;
 	}
 
-	.img_footer{
+	.img_footer {
 		width: 45px;
 	}
 
-	.container_contact div{
+	.container_contact div {
 		width: 70px;
 	}
 
-	#flecha_subir{
+	#flecha_subir {
 		width: 44px;
 		height: 44px;
 	}
@@ -179,9 +195,9 @@
 
 
 	/*-------------------- Home --------------------*/
-	
 
-	#home #caja_iconos{
+
+	#home #caja_iconos {
 		display: none;
 	}
 
@@ -191,7 +207,7 @@
 		width: 400px;
 		max-height: 400px;
 	}
-	
+
 	.slide img {
 		max-height: 400px;
 	}
@@ -200,40 +216,40 @@
 		width: 400px;
 	}
 
-	.cross_slider{
+	.cross_slider {
 		display: block;
 	}
 
-	.btn-primary.type_button{
+	.btn-primary.type_button {
 		margin-top: 2%;
 	}
-	
+
 	/*-------------------- Footer --------------------*/
-	.container_number_email{
+	.container_number_email {
 		width: 100%;
 	}
 
-	.container_socialMedia{
+	.container_socialMedia {
 		width: 100%;
 	}
 
-	.container_socialMedia h2{
+	.container_socialMedia h2 {
 		font-size: 24px;
 	}
 
-	.container_legalidad{
+	.container_legalidad {
 		width: 60%;
 	}
 
-	.container_legalidad span{
+	.container_legalidad span {
 		display: block;
 	}
 
-	.img_footer{
+	.img_footer {
 		width: 45px;
 	}
 
-	.container_contact div{
+	.container_contact div {
 		width: 70px;
 	}
 }
