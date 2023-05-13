@@ -144,6 +144,11 @@
 	-webkit-user-drag: none;
 }
 
+.img_footer[alt="Gmail"]{
+	width: 60%;
+	height: 60%;
+}
+
 .container_contact div:first-child {
 	margin-left: 0%;
 }
