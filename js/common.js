@@ -4,6 +4,16 @@ $(document).ready(function(){
 		home_scroll_arrow();
 	});
 
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+	
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
 	var textos = [];
 
 	$('.text_see_more').each(function(index) { 
