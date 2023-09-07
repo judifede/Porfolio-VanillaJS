@@ -16,8 +16,11 @@
 	font-family: Nunito !important;
 }
 
-.container_aboutme p, .container_education p{
-	padding: 0 8%;
+.container_aboutme,
+.container_education {
+	float: none !important;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .container_experience {
@@ -29,7 +32,7 @@
 
 }
 
-.container_experience li{
+.container_experience li {
 	font-size: 18px;
 	font-family: Nunito !important;
 	text-align: left;
@@ -39,7 +42,7 @@
 	text-align: center;
 }
 
-.container_education br{
+.container_education br {
 	display: none;
 }
 
@@ -63,7 +66,7 @@
 	margin-right: 5px;
 }
 
-#page_aboutme p a{
+#page_aboutme p a {
 	color: rgba(0, 100, 0, 1);
 	text-decoration: underline;
 	cursor: pointer;
