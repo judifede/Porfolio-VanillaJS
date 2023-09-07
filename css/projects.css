@@ -9,6 +9,7 @@
 	background-color: rgba(76, 40, 130, 0.3);/* Violeta pastel*/
 	margin-bottom: 2vh;
 	padding: 15px;
+	border-radius: 5px;
 }
 .container_project p{
 	text-align: justify;
