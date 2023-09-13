@@ -16,8 +16,8 @@ $(document).ready(function () {
 
     // Apertura de Galería
     $('.btn-primary.type_button').click(function(){
-        if($(this).attr('project')){
-            managementGalery($(this).attr('project'));
+        if($(this).attr('proyecto')){
+            managementGalery($(this).attr('proyecto'));
             setup_slider();
             $('.container_galery').addClass('opened');
             $('.slider').addClass('opened');
@@ -162,16 +162,16 @@ function empty_galery(){
 
 }
 
-function managementGalery(project){
+function managementGalery(proyecto){
    
-    switch(project){
+    switch(proyecto){
         case "cm3ramblas":
             num_images = 4;
-            createImages(project);
+            createImages(proyecto);
             break;
         case "abaco":
             num_images = 2;
-            createImages(project);
+            createImages(proyecto);
             break;
         default:
             alert("Proyecto no encontrado");
@@ -180,7 +180,7 @@ function managementGalery(project){
 
 }
 
-function createImages(project){
+function createImages(proyecto){
     
     if($('.slides').is(':empty')){  
         for (var i = 1; i < num_images+1; i++) {
@@ -191,7 +191,7 @@ function createImages(project){
             
             //Img dentro de article
             var img = document.createElement("img");
-            src_galery(project, i);
+            src_galery(proyecto, i);
             var img_galery_alt = "img_galery" + i;
             img.setAttribute("src", img_galery_src);
             img.setAttribute("alt", img_galery_alt);
@@ -219,12 +219,12 @@ function createImages(project){
     }
 }
 
-function src_galery(project, i){
+function src_galery(proyecto, i){
 
     // Cada case es un proyecto.
     // big_img -> Para imágenes con una resolución alta y darles un css diferente.
     // Está iniciada a false al principio de este archivo.
-    switch(project){
+    switch(proyecto){
         case 'cm3ramblas':
             img_galery_src= "img/galeria/CentroMédicoTresRamblas/CM3Ramblas" + i + ".png";
             break;

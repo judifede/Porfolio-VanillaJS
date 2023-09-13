@@ -14,9 +14,19 @@ $(document).ready(function(){
 		});
 	});
 
-	var textos = [];
+	document.getElementById("select_ordenar_experiencias").addEventListener("change", function() {
+		ordenarDivsExperiencias();
+	});
 
-	$('.text_see_more').each(function(index) { 
+	document.getElementById("select_ordenar_proyectos").addEventListener("change", function() {
+		ordenarDivsProyectos();
+	});
+
+	var textos = [];
+	var textos_listas = [];
+
+	$('.container_ver_mas p').each(function(index) { 
+		//Guardamos todo el contenido
 		$(this).attr('data-index', index);
 		var texto = $(this).html().trim().replace(/,/g, 'a1b2c3'); 
 		textos.push(texto);
@@ -30,10 +40,33 @@ $(document).ready(function(){
 		var nuevoContenido = '<p>' + palabras.slice(0, 10).join(' ').replace(/a1b2c3/g, ',') + ' ...</p>';
 		$(this).html(nuevoContenido); 
 
-		$(this).append('<span class="seeMore" ' + 'data-index="' + index + '">Leer más »</span>');
-		$('.seeMore').click(function() {
+		$(this).append('<span class="see_more" ' + 'data-index="' + index + '">Leer más »</span>');
+		$('.see_more').click(function() {
 			var thisIndex = $(this).data('index');
-			$('.text_see_more[data-index="' + thisIndex + '"]').html(textos[thisIndex].replace(/a1b2c3/g, ','));
+			$('.container_ver_mas p[data-index="' + thisIndex + '"]').html(textos[thisIndex].replace(/a1b2c3/g, ','));
+		  });
+
+	});
+
+	$('.container_ver_mas_listas').each(function(listas) { 
+		//Guardamos todo el contenido
+		$(this).attr('data-listas', listas);
+		var texto = $(this).html().trim().replace(/,/g, 'a1b2c3'); 
+		textos_listas.push(texto);
+		var palabras = texto.split(' '); 
+		palabras.forEach(function(elemento, indice) {
+			palabras[indice] = elemento.replace(/a1b2c3/g, ',');
+		});
+		
+		
+		$(this).siblings('.resultado').append(listas); 
+		var nuevoContenido = '<p>' + palabras.slice(0, 10).join(' ').replace(/a1b2c3/g, ',') + ' ...</p>';
+		$(this).html(nuevoContenido); 
+
+		$(this).append('<span class="see_more_listas" ' + 'data-listas="' + listas + '">Leer más »</span>');
+		$('.see_more_listas').click(function() {
+			var thislista = $(this).data('listas');
+			$('.container_ver_mas_listas[data-listas="' + thislista + '"]').html(textos_listas[thislista].replace(/a1b2c3/g, ','));
 		  });
 
 	});
@@ -51,5 +84,61 @@ $(document).ready(function(){
 			}
 		}
 		
+	}
+
+	function ordenarDivsExperiencias() {
+		var selectElement = document.getElementById("select_ordenar_experiencias");
+		var selectedValue = selectElement.value;
+		
+		var divContainer = document.querySelector("#page_experiencias article .container");
+		var divs = Array.from(divContainer.getElementsByClassName("container_experiencia"));
+		
+		divs.sort(function(a, b) {
+			var fechaInicioA = new Date(a.getAttribute("data-fecha-inicio"));
+			var fechaFinA = new Date(a.getAttribute("data-fecha-fin"));
+			var duracionA = fechaFinA - fechaInicioA;
+			
+			var fechaInicioB = new Date(b.getAttribute("data-fecha-inicio"));
+			var fechaFinB = new Date(b.getAttribute("data-fecha-fin"));
+			var duracionB = fechaFinB - fechaInicioB;
+			
+			if (selectedValue === "fecha_ascendente") {
+				return fechaFinA - fechaFinB;
+			} else if (selectedValue === "fecha_descendente") {
+				return fechaFinB - fechaFinA;
+			} else if (selectedValue === "duracion_ascendente") {
+				return duracionA - duracionB;
+			} else if (selectedValue === "duracion_descendente") {
+				return duracionB - duracionA;
+			}
+		});
+		
+		divs.forEach(function(div) {
+			divContainer.appendChild(div);
+		});
+	}
+
+	function ordenarDivsProyectos() {
+		var selectElement = document.getElementById("select_ordenar_proyectos");
+		var selectedValue = selectElement.value;
+		
+		var divContainer = document.querySelector("#page_proyectos article .container");
+		var divs = Array.from(divContainer.getElementsByClassName("container_proyecto"));
+		
+		divs.sort(function(a, b) {
+			var fechaFinA = new Date(a.getAttribute("data-fecha-fin"));
+			
+			var fechaFinB = new Date(b.getAttribute("data-fecha-fin"));
+			
+			if (selectedValue === "fecha_ascendente") {
+				return fechaFinA - fechaFinB;
+			} else if (selectedValue === "fecha_descendente") {
+				return fechaFinB - fechaFinA;
+			} 
+		});
+		
+		divs.forEach(function(div) {
+			divContainer.appendChild(div);
+		});
 	}
 });

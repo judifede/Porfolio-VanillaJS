@@ -122,6 +122,13 @@
 		margin-top: 20px !important;
 	}
 
+	.container_perfil,
+	.container_education,
+	.container_perfil p,
+	.container_education p {
+		text-align: center;
+	}
+
 	/*-------------------- About Me --------------------*/
 
 	#page_sobre_mi article div div p {
@@ -129,11 +136,7 @@
 		text-align: center;
 	}
 
-	.container_education br {
-		display: block;
-	}
-
-	/*-------------------- Projects --------------------*/
+	/*-------------------- proyectos --------------------*/
 
 	.slider {
 		width: 650px;
@@ -182,7 +185,6 @@
 }
 
 
-
 /* Movil */
 @media (max-width: 425px) {
 
@@ -194,7 +196,7 @@
 		display: none;
 	}
 
-	/*-------------------- Projects --------------------*/
+	/*-------------------- proyectos --------------------*/
 
 	.slider {
 		width: 400px;

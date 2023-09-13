@@ -1,0 +1,62 @@
+#page_experiencias {
+	padding: 30px 10vw 30px 10vw;
+}
+
+#page_experiencias article {
+	text-align: center;
+}
+
+#page_experiencias article li {
+	text-align: left;
+}
+
+#page_experiencias article div p {
+	font-size: 20px;
+	text-align: left;
+	font-family: Nunito !important;
+}
+
+
+
+#select_ordenar_experiencias{
+	font-size: 20px;
+}
+
+.container_experiencia {
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.container_experiencia li {
+	font-size: 18px;
+	font-family: Nunito !important;
+	text-align: left;
+}
+
+.container_duracion_logo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container_duracion_logo .img_experiencia{
+	width: 10%;
+	display: inline-block;
+	margin: 0 3% 0 0;
+}
+
+.container_duracion_logo .img_experiencia[alt='superprof'], .container_duracion_logo .img_experiencia[alt='abaco_system']{
+	width: 7%;
+}
+
+#page_experiencias .fa-map-marker-alt {
+	margin-right: 5px;
+}
+
+#page_experiencias p a {
+	color: rgba(0, 100, 0, 1);
+	text-decoration: underline;
+	cursor: pointer;
+}

@@ -56,15 +56,17 @@ h3.text_header{
 	transform: scale(1.1,1.1);
 }
 
-
-
-.seeMore{
-	float: left;
+.see_more, .see_more_listas{
 	cursor: pointer;
 	color: blue;
 	font-size: 18px;
 }
 
-.duration{
-	clear: left;
+.text_duracion{
+	display: inline;
+}
+
+.container_select{
+	display: flex;
+	flex-direction: row-reverse;
 }
